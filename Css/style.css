@@ -1,0 +1,1484 @@
+:root {
+    --nav-back-color: #EAEFF6;
+    --footer-back-color: #B1BED0;
+    --light-main-color: #C9D6E9;
+    --circel-back: #F6FCFA;
+    --priymery-btn: #597193;
+    --btn-hover: #6d88af;
+    --information-card: #F6FCFA;
+    --unactive-btn: rgba(177, 190, 208, 0.66);
+    --h1-color: #3D4550;
+    --title-color: #353637;
+    --text-color: #939393;
+    --solid-color: #fff;
+    --market-titr: #4C6487;
+    --btn-box-shadow: 0px 4px 12px rgba(21, 21, 21, 0.15);
+    --circel-backbox-shadow: -5px 0px 39px rgba(118, 118, 118, 0.08);
+    --card-border: 1px solid #596B86;
+}
+
+@font-face {
+    font-family: IRANSansX;
+    src: url(/Css/woff2/IRANSansX-Regular.woff2);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 80vh;
+    font-family: IRANSansX;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+* {
+    font-family: IRANSansX;
+    line-height: 2;
+}
+
+a {
+    color: var(--title-color);
+    text-decoration: none;
+}
+
+h1 {
+    margin: 0;
+    color: var(--h1-color);
+    font-size: 45px;
+    line-height: normal;
+}
+
+/* Start shared style */
+.priymery-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--priymery-btn);
+    color: var(--solid-color);
+    width: 135px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    box-shadow: var(--btn-box-shadow);
+    transition: all 0.5s;
+}
+
+.priymery-btn:hover {
+    background: var(--btn-hover);
+}
+
+.secondery-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--footer-back-color);
+    color: var(--solid-color);
+    width: auto;
+    height: 40px;
+    padding: 5px 20px;
+    margin: 0px 5px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    box-shadow: var(--btn-box-shadow);
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.secondery-btn:hover {
+    background: var(--btn-hover);
+}
+
+/* End shared style */
+
+/* navbar */
+nav {
+    position: fixed;
+    z-index: 9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: var(--nav-back-color);
+}
+
+.navbar-contianer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 15px 0px;
+    margin: 0px 100px;
+}
+
+.navbar-link-contianer a {
+    text-decoration: none;
+    color: var(--title-color);
+    margin: 0px 30px;
+    font-size: 18px;
+}
+
+.navbar-link-contianer a:hover {
+    color: var(--priymery-btn);
+}
+
+.active-link {
+    border-bottom: 2px solid var(--priymery-btn);
+    color: var(--priymery-btn) !important;
+    padding-bottom: 4px;
+}
+
+/* login modal */
+.login-modal-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(180deg, rgb(42 31 90 / 8%) 0%, rgba(90, 66, 192, 0) 100%);
+    backdrop-filter: blur(7.5px);
+    position: fixed;
+    z-index: 9;
+    top: 0;
+    width: 100%;
+    overflow: hidden;
+    height: 0;
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.login-modal {
+    display: flex;
+    width: auto;
+    flex-direction: column;
+    justify-content: center;
+    background: var(--solid-back-color);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+.tab-buttons {
+    display: flex;
+}
+
+.tab-btn {
+    width: 50%;
+    border: none;
+    background-color: var(--solid-back-color);
+    padding: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+    color: var(--main-dark-color);
+    border-radius: 20px;
+    margin: 10px;
+}
+
+.tab-btn:hover {
+    background-color: var(--btn-hover);
+    color: var(--solid-color);
+}
+
+.tab-btn.active {
+    background-color: var(--priymery-btn);
+    color: var(--solid-color);
+    width: 100%;
+    border-radius: 20px;
+}
+
+.content-info {
+    width: 100%;
+}
+
+.login-form-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.login-form-btn {
+    border: none !important;
+    width: auto !important;
+    padding: 10px 25px !important;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+.form-row-modal {
+    display: flex;
+    margin: 10px;
+    background: var(--form-input-color);
+    border-radius: 25px;
+}
+
+.form-row-modal input {
+    height: 30px;
+    border: none;
+    background: var(--nav-back-color);
+    width: auto;
+    min-width: 345px;
+    border-radius: 0px 25px 25px 0px;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.form-row-modal input:focus {
+    outline: 0;
+}
+
+.form-row-modal label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 10px;
+    background: var(--footer-back-color);
+    height: 50px;
+    width: auto;
+    min-width: 188px;
+    font-size: 15px;
+    color: var(--title-color);
+    border-radius: 25px 0px 0px 25px;
+}
+
+.tab-content {
+    display: none;
+    width: 100%;
+}
+
+.tab-content.show {
+    display: flex;
+    gap: 14px;
+}
+
+.close-login-modal {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+
+.close-login-modal button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.close-login-modal svg {
+    width: 20px;
+}
+
+/************************************* start Paragraph sections *************************************/
+.Paragraph-section {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    width: 90%;
+}
+
+.Paragraph-section p {
+    color: var(--text-color);
+    font-size: 18px;
+    margin: 0;
+    font-weight: 300;
+}
+
+.Paragraph-section h2 {
+    margin: 0;
+    color: var(--market-titr);
+    font-size: 24px;
+}
+
+.Paragraph-pic {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: -25px;
+    width: 100px;
+    opacity: 0.3;
+}
+
+/************************************* start pic-text sections *************************************/
+.pic-text-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 100px;
+    margin-bottom: 40px;
+    width: 90%;
+}
+
+.text-col {
+    width: 70%;
+}
+
+.text-col p {
+    color: var(--text-color);
+    font-size: 18px;
+    margin: 0;
+    font-weight: 300;
+}
+
+.text-col h3 {
+    margin: 0;
+    color: var(--market-titr);
+    font-size: 24px;
+}
+
+.pic-holder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+    background: var(--nav-back-color);
+    border-radius: 100%;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.pic-holder img {
+    width: 250px;
+    margin-bottom: -50px;
+}
+
+/************************************* start mian sections *************************************/
+.warpper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 80px;
+    min-height: 80vh;
+    width: 100%;
+}
+
+/************* start page banner *************/
+.banner-warpper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background-image: url("./bannerBack.png");
+    background-size: cover;
+    width: 100%;
+}
+
+.banner-contianer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 60px !important;
+    margin: 0px 100px;
+}
+
+.banner-text-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.banner-text-card h1 {
+    margin: 0;
+    color: var(--h1-color);
+    font-size: 45px;
+    line-height: normal;
+}
+
+.banner-text-card p {
+    font-size: 18px;
+    color: var(--text-color);
+}
+
+.text-card-btns {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 25px;
+}
+
+.text-card-btns a {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+}
+
+.text-card-btns a span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--priymery-btn);
+    width: 40px;
+    height: 40px;
+    border-radius: 100px;
+    margin-right: 10px;
+    box-shadow: var(--btn-box-shadow);
+}
+
+.banner-picture-card {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.back-circle {
+    display: block;
+    width: 540px;
+    height: 540px;
+    background: var(--circel-back);
+    border-radius: 100%;
+    box-shadow: var(--circel-backbox-shadows);
+}
+
+.main-pic {
+    position: absolute;
+    bottom: 0;
+    right: 225px;
+    height: auto;
+    width: 290px;
+}
+
+.payment-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    right: 85px;
+    top: 55px;
+    box-shadow: 0px 8px 28px rgba(84, 84, 84, 0.1);
+    background: var(--solid-color);
+    width: 113px;
+    height: 124px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.payment-card p {
+    margin: 0;
+    margin-bottom: 3px;
+    color: var(--title-color);
+    font-weight: bold;
+}
+
+.payment-card span {
+    font-size: 10px;
+    color: var(--text-color);
+}
+
+.wallet {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--light-main-color);
+    box-shadow: var(--btn-box-shadow);
+    width: 40px;
+    height: 40px;
+    border-radius: 100px;
+    margin-bottom: 15px;
+}
+
+.market-card {
+    position: relative;
+    left: 70px;
+    top: 265px;
+    width: 206px;
+    height: 190px;
+    background: var(--solid-color);
+    border-radius: 8px;
+    padding: 25px;
+    filter: drop-shadow(-2px 12px 25px rgba(97, 97, 97, 0.1));
+}
+
+.market-card p span {
+    margin-left: 75px;
+}
+
+.market-card p {
+    margin: 0;
+    margin-top: 11px;
+    font-size: 12px;
+    line-height: normal;
+}
+
+.market-card img {
+    width: 100%;
+    margin-top: 5px;
+}
+
+.market-titr {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--light-main-color);
+    padding: 5px;
+    width: 100px;
+    border-radius: 100px;
+}
+
+.market-titr span {
+    display: block;
+    background: var(--market-titr);
+    width: 5px;
+    height: 5px;
+    margin-right: 5px;
+    border-radius: 100px;
+    margin-bottom: 2px;
+}
+
+.market-titr p {
+    margin: 0;
+    color: var(--market-titr);
+}
+
+.market-month {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 10px;
+    margin-top: 10px;
+    color: var(--btn-hover);
+}
+
+.market-month :nth-child(6) {
+    background: var(--light-main-color);
+    padding: 0px 5px;
+    border-radius: 100px;
+    color: var(--title-color);
+}
+
+/************* End page banner *************/
+/************* start titr componnet *************/
+.titr-componnet-warpper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 50px 0px;
+    margin-top: 100px;
+}
+
+.titr-componnet-warpper p {
+    margin: 0;
+    margin-bottom: 5px;
+    font-size: 45px;
+    color: var(--title-color);
+}
+
+.titr-componnet-warpper span {
+    font-size: 18px;
+    color: var(--text-color);
+}
+
+/************* End titr componnet *************/
+/************* start room reservation *************/
+.room-reservation-warpper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 50px 0px;
+    margin-top: 0px;
+}
+
+.room-reservation-contianer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0px 100px;
+}
+
+.reservation-pic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px 0px 0px 8px;
+    width: 50%;
+    height: 523px;
+}
+
+.reservation-pic img {
+    width: 100%;
+    height: auto;
+    max-height: 523px;
+    object-fit: cover;
+    border-radius: 8px 0px 0px 8px;
+    box-shadow: 0px 4px 79px 7px rgba(115, 115, 115, 0.12);
+}
+
+.reservation-form-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    background: var(--circel-back);
+    width: 50%;
+    height: 523px;
+    border-radius: 0px 8px 8px 0px;
+    overflow: hidden;
+}
+
+.reservation-pattern {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+    width: auto;
+    max-width: 110px;
+    transform: rotate(9deg);
+    margin-top: -10px;
+    margin-right: -3px;
+}
+
+.reservation-pattern span {
+    display: block;
+    width: 50px;
+    height: 35px;
+    background: var(--solid-color);
+    margin-bottom: 10px;
+    clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+    position: relative;
+}
+
+.reservation-pattern span:nth-child(1) {
+    transform: rotate(-60deg);
+    top: 15px;
+    left: 1px;
+}
+
+.reservation-pattern span:nth-child(2) {
+    transform: rotate(-60deg);
+    top: 7px;
+    left: 1px;
+}
+
+.reservation-pattern span:nth-child(3) {
+    transform: rotate(-60deg);
+    left: 14px;
+    top: 20px;
+}
+
+.reservation-pattern span:nth-child(4) {
+    transform: rotate(-60deg);
+    left: 13px;
+    top: 5px;
+}
+
+.reservation-form-section {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    height: 440px;
+}
+
+.reservation-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sub-btn {
+    background-color: transparent;
+    border: 1.5px solid var(--priymery-btn);
+    border-radius: 5px;
+    color: var(--title-color);
+    height: 50px;
+    font-size: 14px;
+    opacity: 1;
+    position: relative;
+    transition: opacity 300ms cubic-bezier(.694, 0, 0.335, 1), background-color 100ms cubic-bezier(.694, 0, 0.335, 1), color 100ms cubic-bezier(.694, 0, 0.335, 1);
+    cursor: pointer;
+}
+
+.sub-btn::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    content: "";
+    backface-visibility: hidden;
+    background-color: #59719385;
+    color: var(--circel-back);
+    transform: translateZ(0);
+    clip-path: polygon(-1% 0, 0 0, -25% 100%, -1% 100%);
+    animation: opacityFallbackOut .5s step-end forwards;
+    transition: clip-path .5s cubic-bezier(.165, 0.84, 0.44, 1), -webkit-clip-path .5s cubic-bezier(.165, 0.84, 0.44, 1);
+}
+
+.sub-btn:hover:before {
+    animation: opacityFallbackIn 0s step-start forwards;
+    clip-path: polygon(0 0, 101% 0, 101% 101%, 0 101%);
+}
+
+.sub-btn span {
+    z-index: 1;
+    position: relative;
+}
+
+.form-row {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 20px 0px;
+}
+
+.form-row span {
+    display: flex;
+    align-items: center;
+}
+
+.form-row span input {
+    width: 340px;
+    height: 50px;
+    background: transparent;
+    border: 1px solid #ABABAB;
+    border-radius: 5px 0px 0px 5px;
+    border-right: none;
+    padding-left: 10px;
+    font-size: 16px;
+}
+
+.form-row span input:focus {
+    outline: none;
+}
+
+.datepicker {
+    border: 1px solid #ABABAB;
+    border-left: none;
+    border-radius: 0px 5px 5px 0px;
+    height: 52px;
+    padding-right: 15px;
+}
+
+.form-row select {
+    border: 1px solid #ABABAB;
+    border-radius: 5px;
+    background: transparent;
+    width: 392px;
+    height: 50px;
+    padding: 10px;
+    font-size: 16px;
+    color: #A4A4A4;
+}
+
+/************* End room reservation *************/
+/************* Start Hotel rooms *************/
+.hotel-rooms-warpper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    width: 100%;
+}
+
+.hotel-rooms-warpper h1 {
+    margin: 0;
+    font-size: 45px;
+    font-weight: normal;
+    color: var(--title-color);
+}
+
+.hotel-rooms-warpper p {
+    margin-bottom: 0;
+    font-size: 18px;
+    text-align: center;
+    color: var(--sub-title-color);
+}
+
+.rooms-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+    justify-items: center;
+    width: 100%;
+}
+
+.rooms-card {
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+    width: 65%;
+}
+
+.rooms-card img {
+    width: 100%;
+    height: 264px;
+    border-radius: 6px 6px 0px 0px;
+}
+
+.room-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: 140px;
+    border: var(--card-border);
+    padding: 15px;
+    height: auto;
+    min-width: 170px;
+}
+
+.room-info p {
+    margin: 0;
+    font-size: 24px;
+    color: var(--cards-title-color);
+}
+
+.room-property {
+    display: flex;
+    align-items: center;
+}
+
+.room-property span {
+    margin: 10px;
+    color: var(--property-text-color);
+    font-size: 12px;
+}
+
+.room-price {
+    color: var(--price-text-color) !important;
+    font-size: 18px !important;
+}
+
+.room-price span {
+    font-size: 30px;
+    color: var(--price-color);
+    font-weight: bold;
+}
+
+/************* End Hotel rooms *************/
+/************* start Hotel Facilities *************/
+.hotel-facilities-warpper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    width: 100%;
+}
+
+.hotel-facilities-warpper h2 {
+    margin: 0;
+    font-size: 45px;
+    font-weight: normal;
+    color: var(--title-color);
+}
+
+.hotel-facilities-warpper p {
+    margin-bottom: 0;
+    font-size: 16px;
+    text-align: center;
+    color: var(--sub-title-color);
+}
+
+.hotel-facilities-container {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+    width: 100%;
+}
+
+.facilities-card {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row-reverse;
+    margin: 15px;
+    width: 50%;
+    border: var(--card-border);
+    border-radius: 2px;
+    padding: 35px;
+}
+
+.facilities-card img {
+    width: 55px;
+}
+
+.facilities-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 15px;
+}
+
+.facilities-info p {
+    font-size: 24px;
+    margin: 0;
+    color: var(--cards-title-color);
+}
+
+.facilities-info span {
+    font-size: 14px;
+    color: var(--facilities-text-color);
+}
+
+/************* End Hotel Facilities *************/
+/************* Start Hotel option *************/
+.Hotel-option-warpper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    width: 100%;
+    margin-bottom: 100px;
+}
+
+.Hotel-option-contianer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+}
+
+.Hotel-option-contianer hr {
+    width: 0px;
+    height: 55px;
+    border: 1.5px solid #C3C3C3;
+}
+
+.Hotel-option p {
+    font-size: 50px;
+    margin: 0;
+    font-weight: bold;
+    color: var(--priymery-btn);
+}
+
+.Hotel-option span {
+    color: var(--text-color);
+    font-size: 18px;
+}
+
+/************* End Hotel option *************/
+/************* Start Hotel History *************/
+.Hotel-History-warpper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 100px;
+}
+
+.Hotel-History-contianer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0px 100px;
+}
+
+.video-history {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.video-history video {
+    width: 100%;
+    height: 525px;
+    border-radius: 0px 5px 5px 0px;
+    object-fit: cover;
+}
+
+.history-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 525px;
+    background: var(--circel-back);
+    border-radius: 5px 0px 0px 5px;
+}
+
+.description-content {
+    width: 550px;
+    height: 350px;
+}
+
+.description-content h2 {
+    margin: 0;
+    color: var(--h1-color);
+    font-size: 40px;
+    font-weight: 300;
+}
+
+.description-content p {
+    font-size: 18px;
+    color: var(--text-color);
+    margin: 0;
+    font-size: 16px;
+}
+
+.description-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin-top: 25px;
+}
+
+.description-btn a {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+}
+
+.description-btn a span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--priymery-btn);
+    width: 40px;
+    height: 40px;
+    border-radius: 100px;
+    margin-right: 10px;
+    box-shadow: var(--btn-box-shadow);
+}
+
+/************* End Hotel History *************/
+/************* Start Customers Slider *************/
+.Customers-slider-warpper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 115px;
+}
+
+.Customers-slider-contianer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    margin: 0px 100px;
+}
+
+.slider-title {
+    margin-bottom: 70px;
+}
+
+.slider-title p {
+    font-size: 40px;
+    margin: 0;
+    color: var(--title-color);
+}
+
+.slider-title span {
+    font-size: 18px;
+    color: var(--text-color);
+}
+
+.slider-crads-contianer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.slider-crads {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    /* width: 350px; */
+    width: 20%;
+    height: 390px;
+    background: var(--circel-back);
+    border-top: 5px;
+    padding: 30px;
+    box-shadow: 0px 10px 19px rgba(66, 66, 66, 0.2);
+    border-radius: 5px;
+}
+
+.slider-crads img {
+    width: 80px;
+    height: 80px;
+}
+
+.crads-titr {
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+
+.crads-titr p {
+    margin: 0 !important;
+    font-size: 30px !important;
+    color: var(--h1-color) !important;
+    padding: 0px !important;
+}
+
+.crads-titr span {
+    font-size: 12px;
+    color: var(--text-color);
+}
+
+.slider-crads p {
+    padding-right: 35px;
+    margin: 0;
+    color: var(--text-color);
+}
+
+.active-slide {
+    background-image: url("./activedSlidBack.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    transform: translate(0px, -35px);
+    background-size: cover;
+}
+
+.active-slide p {
+    color: var(--solid-color) !important;
+}
+
+.active-slide span {
+    color: var(--solid-color) !important;
+}
+
+.slider-crads-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.slider-crads-btn span {
+    display: block;
+    width: 16px;
+    height: 10px;
+    background: var(--footer-back-color);
+    border-radius: 100px;
+    margin: 5px;
+}
+
+.active-btn {
+    background: var(--priymery-btn) !important;
+    width: 38px !important;
+}
+
+/************* End Customers Slider *************/
+/************* Start news section *************/
+.news-slider-warpper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 115px;
+}
+
+.news-slider-contianer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    margin: 0px 100px;
+}
+
+.news-crads-contianer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.news-crad {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin-bottom: 35px;
+}
+
+.news-crad img {
+    width: 100%;
+    height: 350px;
+}
+
+.news-crad-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border: var(--card-border);
+    padding: 20px;
+}
+
+.news-crad-info p {
+    margin: 12px 0px;
+    font-size: 24px;
+    color: var(--title-color);
+}
+
+.news-crad-info span {
+    font-size: 15px;
+    color: var(--text-color);
+}
+
+.news-option {
+    display: flex;
+    align-items: center;
+}
+
+.news-option span {
+    display: flex;
+    align-items: center;
+    color: var(--text-color);
+}
+
+.news-option span img {
+    width: auto;
+    height: auto;
+    margin-right: 7px;
+}
+
+.news-btn {
+    margin-top: 25px;
+}
+
+.news-btn a {
+    font-size: 16px;
+    color: var(--priymery-btn);
+}
+
+.news-btn a img {
+    width: auto;
+    height: auto;
+}
+
+/************* End news section *************/
+/************* Start receive news *************/
+.receive-news-warpper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--footer-back-color);
+    border-radius: 10px;
+    width: 85%;
+    height: 385px;
+    margin-top: 115px;
+    margin-bottom: 100px;
+    overflow: hidden;
+}
+
+.left-pattern {
+    height: 385px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+
+.news-pattern {
+    margin-left: -8px;
+    margin-bottom: 23px;
+}
+
+.news-pattern span {
+    background: #D2DCE9;
+}
+
+.news-pattern span:nth-child(1) {
+    top: 15px;
+    left: 1px;
+}
+
+.news-pattern span:nth-child(2) {
+    top: 7px;
+    left: 2px;
+}
+
+.news-pattern span:nth-child(3) {
+    left: 8px;
+    top: 24px;
+}
+
+.news-pattern span:nth-child(4) {
+    left: 6px;
+    top: 15px;
+}
+
+.right-pattern {
+    height: 385px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.right-pattern span {
+    background: #D2DCE9;
+}
+
+.receive-news-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.receive-news-form span {
+    font-size: 18px;
+    color: var(--solid-color);
+}
+
+.receive-news-form p {
+    font-size: 40px;
+    text-align: center;
+    color: var(--h1-color);
+}
+
+.receive-news-input {
+    display: flex;
+    align-items: center;
+}
+
+.receive-news-input input {
+    width: 354px;
+    height: 45px;
+    background: var(--solid-color);
+    box-shadow: 0px 2px 12px rgba(52, 52, 52, 0.15);
+    border-radius: 6px;
+    border: none;
+    padding-left: 10px;
+    font-size: 14px;
+    color: var(--text-color);
+}
+
+.receive-news-input button {
+    width: 107px;
+    height: 47px;
+    background: #889CB9;
+    box-shadow: -3px 2px 12px rgba(0, 0, 0, 0.15);
+    border-radius: 6px;
+    border: none;
+    transform: translate(-18px, 0px);
+    font-size: 16px;
+    color: var(--solid-color);
+}
+
+/************* End receive news *************/
+/************************************* End mian sections *************************************/
+/******* Start Footer *******/
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 100px;
+}
+
+.footer-contianer {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 90%;
+    height: 280px;
+    margin-bottom: 50px;
+    padding: 40px;
+    border: var(--card-border);
+}
+
+.about-us-clm {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 300px;
+}
+
+.about-us-clm p {
+    font-size: 14px;
+    color: var(--text-color);
+}
+
+.contact-us-clm {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.contact-us-clm h4 {
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: var(--title-color);
+}
+
+.contact-us-clm span {
+    margin: 10px 0px;
+    color: var(--text-color);
+    font-size: 16px;
+}
+
+.contact-us-clm span a {
+    color: var(--text-color);
+    font-size: 16px;
+}
+
+.social-media-clm {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.social-media-clm h4 {
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: var(--title-color);
+}
+
+.social-media {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.social-media a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 10px;
+    width: 30px;
+    height: 30px;
+    border: 2px solid var(--light-main-color);
+    border-radius: 5px;
+}
+
+.social-media-clm p {
+    color: var(--text-color);
+    font-size: 14px;
+}
+
+.footer-copy-right {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: var(--footer-back-color);
+    width: 100%;
+    height: 60px;
+    color: rgba(0, 0, 0, 0.42);
+}
+
+.footer-copy-right p {
+    font-size: 16px;
+    margin: 10px 0px;
+}
+
+.footer-copy-right pre {
+    font-size: 14px;
+    margin: 10px 0px;
+}
+
+/******* End Footer *******/

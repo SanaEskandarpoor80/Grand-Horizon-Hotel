@@ -1,0 +1,195 @@
+@media screen and (max-width: 1590px) {
+    .banner-picture-card {
+        width: 50%;
+    }
+
+    .main-pic {
+        right: 195px;
+        width: 225px;
+    }
+
+    .market-card {
+        left: 20px;
+        top: 180px;
+    }
+
+    .back-circle {
+        width: 100%;
+        height: 450px;
+    }
+
+    .market-card p {
+        font-size: 10px;
+    }
+
+    .payment-card {
+        height: 95px;
+    }
+
+    .payment-card p {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 1110px) {
+    .market-card {
+        display: none;
+    }
+
+    .back-circle {
+        display: none;
+    }
+
+    .payment-card {
+        display: none;
+    }
+
+    .main-pic {
+        position: unset;
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .banner-contianer {
+        flex-direction: column;
+    }
+
+    .banner-text-card {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .banner-picture-card {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .market-card {
+        display: block;
+    }
+
+    .payment-card {
+        display: block;
+    }
+
+    .main-pic {
+        width: 300px;
+    }
+
+    .banner-text-card h1 {
+        font-size: 26px;
+    }
+
+    .banner-text-card p {
+        font-size: 16px;
+    }
+
+    /* start room reservation  */
+    .room-reservation-contianer {
+        flex-direction: column-reverse;
+    }
+
+    .reservation-pic {
+        width: 100%;
+    }
+
+    .reservation-form-card {
+        width: 100%;
+        height: auto;
+    }
+
+    .reservation-form-section {
+        margin-bottom: 35px;
+    }
+
+    /* Start Hotel rooms */
+    .rooms-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .rooms-card img {
+        height: 360px;
+    }
+
+    /* Start Hotel Facilities */
+    .hotel-facilities-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .facilities-card {
+        width: 70%;
+    }
+
+    /* Start Hotel option */
+    .Hotel-option p {
+        font-size: 30px;
+    }
+
+    .Hotel-option span {
+        font-size: 16px;
+    }
+
+    /* Start Hotel History */
+    .Hotel-History-contianer {
+        flex-direction: column;
+    }
+
+    .history-description {
+        width: 100%;
+    }
+
+    .video-history {
+        width: 100%;
+    }
+
+    /* Start Customers Slider */
+    .slider-crads {
+        display: none;
+    }
+
+    .active-slide {
+        display: block !important;
+        width: 100%;
+    }
+
+    /* Start news section */
+    .news-crad {
+        display: none;
+    }
+
+    .acived-news {
+        display: flex !important;
+        width: 100%;
+    }
+
+    .news-crad img {
+        height: 430px;
+    }
+
+    /* Start footer */
+    .footer-contianer {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    .about-us-clm {
+        width: 100%;
+        margin: 20px 0px;
+    }
+
+    .contact-us-clm {
+        width: 100%;
+        margin: 20px 0px;
+    }
+
+    .social-media-clm {
+        width: 100%;
+        margin: 20px 0px;
+    }
+}

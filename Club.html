@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Club</title>
+    <link rel="stylesheet" href="./Css/style.css">
+    <link rel="stylesheet" href="./Css/responsive.css">
+    <link rel="stylesheet" href="./Css/Club.css">
+</head>
+
+<body>
+    <!-- start navbar -->
+    <nav>
+        <div class="navbar-contianer">
+            <a href="./index.html">
+                <img src="./image/Home page/Logo.png" alt="HOTEL LOGO">
+            </a>
+            <div class="navbar-link-contianer">
+                <a href="index.html">Home</a>
+                <a href="Club.html" class="active-link">Club</a>
+                <a href="Contact-Us.html">Contact Us</a>
+                <a href="About-Us.html">About Us</a>
+                <a href="#">Pages </a>
+                <a href="blog.html">Blog</a>
+            </div>
+            <button class="priymery-btn" onclick="openLoginModal()">Reservation</button>
+        </div>
+    </nav>
+    <!-- End navbar -->
+    <!-- Start main section -->
+    <div class="warpper">
+        <!-- Start special offer banner -->
+        <div class="top-Club-warpper">
+            <div class="top-Club-contianer">
+                <div class="top-Club-content">
+                    <h1>Club Lounge Access</h1>
+                    <p>
+                        Considered a hotel within The Ritz-Carlton, Toronto, the luxurious guest rooms and suites cater
+                        to the elevated experience within the Club Lounge. Outside of the exclusive club-level rooms,
+                        guests will enjoy the heated indoor saltwater pool, Spa myBlend, and multiple dining options.
+                        All Club Level rooms feature a high-floor location with spectacular views of the Toronto
+                        skyline.
+                    </p>
+                    <a href="javascript:viod(0);" class="priymery-btn">More informatin</a>
+                </div>
+                <div class="top-Club-pic">
+                    <img src="./image/Club page/Club Lounge Access.avif" alt="Club Lounge Access">
+                </div>
+                <div class="special-lable">
+                    <svg width="26" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M13.9782 1.50776L16.9207 7.94572C16.9504 8.01454 16.9981 8.07408 17.0587 8.11807C17.1194 8.16206 17.1908 8.18888 17.2654 8.1957L24.2975 9.00478C24.529 9.03022 24.7483 9.12195 24.929 9.26895C25.1097 9.41596 25.2442 9.612 25.3162 9.83353C25.3882 10.0551 25.3948 10.2927 25.3351 10.5178C25.2754 10.743 25.152 10.9462 24.9796 11.1029L19.7663 15.8902C19.7096 15.9396 19.6674 16.0035 19.644 16.075C19.6207 16.1465 19.6172 16.2229 19.6338 16.2963L21.0373 23.2342C21.0848 23.4621 21.0656 23.6989 20.9817 23.9161C20.8978 24.1333 20.753 24.3217 20.5646 24.4585C20.3762 24.5953 20.1523 24.6748 19.9198 24.6873C19.6873 24.6998 19.4561 24.6448 19.2541 24.5291L13.0894 21.0502C13.0246 21.0126 12.9509 20.9927 12.8759 20.9927C12.8008 20.9927 12.7271 21.0126 12.6623 21.0502L6.49622 24.5291C6.29419 24.6445 6.06313 24.6992 5.83079 24.6865C5.59845 24.6738 5.37471 24.5944 5.18644 24.4576C4.99817 24.3209 4.85338 24.1327 4.76946 23.9157C4.68553 23.6986 4.66605 23.462 4.71334 23.2342L6.11681 16.2963C6.13343 16.2229 6.12989 16.1465 6.10657 16.075C6.08324 16.0035 6.041 15.9396 5.98433 15.8902L0.772072 11.1023C0.599516 10.9457 0.475884 10.7426 0.416044 10.5173C0.356203 10.2921 0.362703 10.0544 0.43476 9.83273C0.506818 9.6111 0.641365 9.415 0.822222 9.26802C1.00308 9.12104 1.22254 9.02944 1.45423 9.00423L8.48741 8.19514C8.56203 8.18833 8.63343 8.16151 8.6941 8.11751C8.75476 8.07352 8.80243 8.01398 8.83209 7.94517L11.7735 1.50776C11.8689 1.29526 12.0237 1.11487 12.2193 0.988318C12.4149 0.861764 12.6429 0.794434 12.8759 0.794434C13.1088 0.794434 13.3368 0.861764 13.5324 0.988318C13.728 1.11487 13.8828 1.29526 13.9782 1.50776Z"
+                            fill="#FFAF14" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <!-- End special offer banner -->
+        <!-- Start Club list -->
+        <div class="club-list-warpper">
+            <div class="club-list-header">
+                <h2>Clubs</h2>
+                <span>
+                    <div class="filter-col">
+                        <button class="secondery-btn">All</button>
+                        <button class="secondery-btn">Most visited</button>
+                        <button class="secondery-btn">overnight</button>
+                    </div>
+                    <div class="Search-col">
+                        <input type="search" placeholder="Search">
+                        <button>
+                            <img src="./image/svg/Search.svg" alt="">
+                        </button>
+                    </div>
+                </span>
+            </div>
+            <div class="club-list-contianer">
+                <a href="javascript:viod(0);" class="club-card">
+                    <img src="./image/Club page/Epoch03.jpg" alt="Epoch">
+                    <div class="club-nam">
+                        <p>Dedicated Concierge</p>
+                        <span>
+                            <svg width="15" height="15" viewBox="0 0 21 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M11.7577 0.754744L14.1117 5.90511C14.1354 5.96016 14.1735 6.0078 14.2221 6.04299C14.2706 6.07819 14.3277 6.09964 14.3874 6.10509L20.0131 6.75236C20.1983 6.77271 20.3738 6.84609 20.5183 6.9637C20.6629 7.0813 20.7704 7.23813 20.828 7.41536C20.8857 7.59258 20.8909 7.78267 20.8432 7.96281C20.7954 8.14294 20.6967 8.30546 20.5588 8.43086L16.3881 12.2607C16.3428 12.3002 16.309 12.3513 16.2903 12.4085C16.2717 12.4657 16.2688 12.5269 16.2821 12.5856L17.4049 18.1359C17.443 18.3182 17.4275 18.5077 17.3605 18.6814C17.2934 18.8552 17.1775 19.0059 17.0268 19.1153C16.876 19.2248 16.6969 19.2883 16.5109 19.2984C16.3249 19.3084 16.14 19.2644 15.9784 19.1718L11.0467 16.3887C10.9947 16.3586 10.9358 16.3427 10.8758 16.3427C10.8158 16.3427 10.7568 16.3586 10.7049 16.3887L5.77207 19.1718C5.61045 19.2641 5.42561 19.3079 5.23973 19.2977C5.05386 19.2876 4.87487 19.224 4.72425 19.1146C4.57363 19.0052 4.4578 18.8547 4.39066 18.6811C4.32352 18.5075 4.30794 18.3181 4.34577 18.1359L5.46855 12.5856C5.48184 12.5269 5.47901 12.4657 5.46035 12.4085C5.44169 12.3513 5.4079 12.3002 5.36256 12.2607L1.19276 8.43041C1.05471 8.3051 0.955805 8.14258 0.907933 7.96239C0.86006 7.7822 0.86526 7.59202 0.922906 7.41472C0.980552 7.23741 1.08819 7.08054 1.23288 6.96295C1.37756 6.84537 1.55313 6.77209 1.73848 6.75192L7.36502 6.10465C7.42472 6.0992 7.48184 6.07774 7.53037 6.04255C7.5789 6.00735 7.61704 5.95972 7.64077 5.90467L9.99387 0.754744C10.0702 0.584742 10.1941 0.440434 10.3506 0.33919C10.507 0.237946 10.6894 0.184082 10.8758 0.184082C11.0621 0.184082 11.2445 0.237946 11.401 0.33919C11.5575 0.440434 11.6813 0.584742 11.7577 0.754744Z"
+                                    fill="#FFAF14" />
+                            </svg>
+                            3.5
+                        </span>
+                    </div>
+                    <p class="short-description">
+                        From dining reservations to excursion recommendations, our dedicated Club Concierge team elevates your experience, catering to you personally to ensure your stay is exceptional. Along with our personalized Concierge service, there are additional benefits that the Club experience offers including: complimentary pressing of two items per day, business center services, enhanced Wi-Fi, and booking our exclusive Club Car. Please note that Club Car requires a minimum two hours advanced notice when making a reservation
+                    </p>
+                </a>
+                <a href="javascript:viod(0);" class="club-card">
+                    <img src="./image/Club page/Epoch03.jpg" alt="Epoch">
+                    <div class="club-nam">
+                        <p>Dedicated Concierge</p>
+                        <span>
+                            <svg width="15" height="15" viewBox="0 0 21 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M11.7577 0.754744L14.1117 5.90511C14.1354 5.96016 14.1735 6.0078 14.2221 6.04299C14.2706 6.07819 14.3277 6.09964 14.3874 6.10509L20.0131 6.75236C20.1983 6.77271 20.3738 6.84609 20.5183 6.9637C20.6629 7.0813 20.7704 7.23813 20.828 7.41536C20.8857 7.59258 20.8909 7.78267 20.8432 7.96281C20.7954 8.14294 20.6967 8.30546 20.5588 8.43086L16.3881 12.2607C16.3428 12.3002 16.309 12.3513 16.2903 12.4085C16.2717 12.4657 16.2688 12.5269 16.2821 12.5856L17.4049 18.1359C17.443 18.3182 17.4275 18.5077 17.3605 18.6814C17.2934 18.8552 17.1775 19.0059 17.0268 19.1153C16.876 19.2248 16.6969 19.2883 16.5109 19.2984C16.3249 19.3084 16.14 19.2644 15.9784 19.1718L11.0467 16.3887C10.9947 16.3586 10.9358 16.3427 10.8758 16.3427C10.8158 16.3427 10.7568 16.3586 10.7049 16.3887L5.77207 19.1718C5.61045 19.2641 5.42561 19.3079 5.23973 19.2977C5.05386 19.2876 4.87487 19.224 4.72425 19.1146C4.57363 19.0052 4.4578 18.8547 4.39066 18.6811C4.32352 18.5075 4.30794 18.3181 4.34577 18.1359L5.46855 12.5856C5.48184 12.5269 5.47901 12.4657 5.46035 12.4085C5.44169 12.3513 5.4079 12.3002 5.36256 12.2607L1.19276 8.43041C1.05471 8.3051 0.955805 8.14258 0.907933 7.96239C0.86006 7.7822 0.86526 7.59202 0.922906 7.41472C0.980552 7.23741 1.08819 7.08054 1.23288 6.96295C1.37756 6.84537 1.55313 6.77209 1.73848 6.75192L7.36502 6.10465C7.42472 6.0992 7.48184 6.07774 7.53037 6.04255C7.5789 6.00735 7.61704 5.95972 7.64077 5.90467L9.99387 0.754744C10.0702 0.584742 10.1941 0.440434 10.3506 0.33919C10.507 0.237946 10.6894 0.184082 10.8758 0.184082C11.0621 0.184082 11.2445 0.237946 11.401 0.33919C11.5575 0.440434 11.6813 0.584742 11.7577 0.754744Z"
+                                    fill="#FFAF14" />
+                            </svg>
+                            3.5
+                        </span>
+                    </div>
+                    <p class="short-description">
+                        From dining reservations to excursion recommendations, our dedicated Club Concierge team elevates your experience, catering to you personally to ensure your stay is exceptional. Along with our personalized Concierge service, there are additional benefits that the Club experience offers including: complimentary pressing of two items per day, business center services, enhanced Wi-Fi, and booking our exclusive Club Car. Please note that Club Car requires a minimum two hours advanced notice when making a reservation
+                    </p>
+                </a>
+                <a href="javascript:viod(0);" class="club-card">
+                    <img src="./image/Club page/Epoch03.jpg" alt="Epoch">
+                    <div class="club-nam">
+                        <p>Dedicated Concierge</p>
+                        <span>
+                            <svg width="15" height="15" viewBox="0 0 21 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M11.7577 0.754744L14.1117 5.90511C14.1354 5.96016 14.1735 6.0078 14.2221 6.04299C14.2706 6.07819 14.3277 6.09964 14.3874 6.10509L20.0131 6.75236C20.1983 6.77271 20.3738 6.84609 20.5183 6.9637C20.6629 7.0813 20.7704 7.23813 20.828 7.41536C20.8857 7.59258 20.8909 7.78267 20.8432 7.96281C20.7954 8.14294 20.6967 8.30546 20.5588 8.43086L16.3881 12.2607C16.3428 12.3002 16.309 12.3513 16.2903 12.4085C16.2717 12.4657 16.2688 12.5269 16.2821 12.5856L17.4049 18.1359C17.443 18.3182 17.4275 18.5077 17.3605 18.6814C17.2934 18.8552 17.1775 19.0059 17.0268 19.1153C16.876 19.2248 16.6969 19.2883 16.5109 19.2984C16.3249 19.3084 16.14 19.2644 15.9784 19.1718L11.0467 16.3887C10.9947 16.3586 10.9358 16.3427 10.8758 16.3427C10.8158 16.3427 10.7568 16.3586 10.7049 16.3887L5.77207 19.1718C5.61045 19.2641 5.42561 19.3079 5.23973 19.2977C5.05386 19.2876 4.87487 19.224 4.72425 19.1146C4.57363 19.0052 4.4578 18.8547 4.39066 18.6811C4.32352 18.5075 4.30794 18.3181 4.34577 18.1359L5.46855 12.5856C5.48184 12.5269 5.47901 12.4657 5.46035 12.4085C5.44169 12.3513 5.4079 12.3002 5.36256 12.2607L1.19276 8.43041C1.05471 8.3051 0.955805 8.14258 0.907933 7.96239C0.86006 7.7822 0.86526 7.59202 0.922906 7.41472C0.980552 7.23741 1.08819 7.08054 1.23288 6.96295C1.37756 6.84537 1.55313 6.77209 1.73848 6.75192L7.36502 6.10465C7.42472 6.0992 7.48184 6.07774 7.53037 6.04255C7.5789 6.00735 7.61704 5.95972 7.64077 5.90467L9.99387 0.754744C10.0702 0.584742 10.1941 0.440434 10.3506 0.33919C10.507 0.237946 10.6894 0.184082 10.8758 0.184082C11.0621 0.184082 11.2445 0.237946 11.401 0.33919C11.5575 0.440434 11.6813 0.584742 11.7577 0.754744Z"
+                                    fill="#FFAF14" />
+                            </svg>
+                            3.5
+                        </span>
+                    </div>
+                    <p class="short-description">
+                        From dining reservations to excursion recommendations, our dedicated Club Concierge team elevates your experience, catering to you personally to ensure your stay is exceptional. Along with our personalized Concierge service, there are additional benefits that the Club experience offers including: complimentary pressing of two items per day, business center services, enhanced Wi-Fi, and booking our exclusive Club Car. Please note that Club Car requires a minimum two hours advanced notice when making a reservation
+                    </p>
+                </a>
+                <a href="javascript:viod(0);" class="club-card">
+                    <img src="./image/Club page/Epoch03.jpg" alt="Epoch">
+                    <div class="club-nam">
+                        <p>Dedicated Concierge</p>
+                        <span>
+                            <svg width="15" height="15" viewBox="0 0 21 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M11.7577 0.754744L14.1117 5.90511C14.1354 5.96016 14.1735 6.0078 14.2221 6.04299C14.2706 6.07819 14.3277 6.09964 14.3874 6.10509L20.0131 6.75236C20.1983 6.77271 20.3738 6.84609 20.5183 6.9637C20.6629 7.0813 20.7704 7.23813 20.828 7.41536C20.8857 7.59258 20.8909 7.78267 20.8432 7.96281C20.7954 8.14294 20.6967 8.30546 20.5588 8.43086L16.3881 12.2607C16.3428 12.3002 16.309 12.3513 16.2903 12.4085C16.2717 12.4657 16.2688 12.5269 16.2821 12.5856L17.4049 18.1359C17.443 18.3182 17.4275 18.5077 17.3605 18.6814C17.2934 18.8552 17.1775 19.0059 17.0268 19.1153C16.876 19.2248 16.6969 19.2883 16.5109 19.2984C16.3249 19.3084 16.14 19.2644 15.9784 19.1718L11.0467 16.3887C10.9947 16.3586 10.9358 16.3427 10.8758 16.3427C10.8158 16.3427 10.7568 16.3586 10.7049 16.3887L5.77207 19.1718C5.61045 19.2641 5.42561 19.3079 5.23973 19.2977C5.05386 19.2876 4.87487 19.224 4.72425 19.1146C4.57363 19.0052 4.4578 18.8547 4.39066 18.6811C4.32352 18.5075 4.30794 18.3181 4.34577 18.1359L5.46855 12.5856C5.48184 12.5269 5.47901 12.4657 5.46035 12.4085C5.44169 12.3513 5.4079 12.3002 5.36256 12.2607L1.19276 8.43041C1.05471 8.3051 0.955805 8.14258 0.907933 7.96239C0.86006 7.7822 0.86526 7.59202 0.922906 7.41472C0.980552 7.23741 1.08819 7.08054 1.23288 6.96295C1.37756 6.84537 1.55313 6.77209 1.73848 6.75192L7.36502 6.10465C7.42472 6.0992 7.48184 6.07774 7.53037 6.04255C7.5789 6.00735 7.61704 5.95972 7.64077 5.90467L9.99387 0.754744C10.0702 0.584742 10.1941 0.440434 10.3506 0.33919C10.507 0.237946 10.6894 0.184082 10.8758 0.184082C11.0621 0.184082 11.2445 0.237946 11.401 0.33919C11.5575 0.440434 11.6813 0.584742 11.7577 0.754744Z"
+                                    fill="#FFAF14" />
+                            </svg>
+                            3.5
+                        </span>
+                    </div>
+                    <p class="short-description">
+                        From dining reservations to excursion recommendations, our dedicated Club Concierge team elevates your experience, catering to you personally to ensure your stay is exceptional. Along with our personalized Concierge service, there are additional benefits that the Club experience offers including: complimentary pressing of two items per day, business center services, enhanced Wi-Fi, and booking our exclusive Club Car. Please note that Club Car requires a minimum two hours advanced notice when making a reservation
+                    </p>
+                </a>
+                <a href="javascript:viod(0);" class="club-card">
+                    <img src="./image/Club page/Epoch03.jpg" alt="Epoch">
+                    <div class="club-nam">
+                        <p>Dedicated Concierge</p>
+                        <span>
+                            <svg width="15" height="15" viewBox="0 0 21 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M11.7577 0.754744L14.1117 5.90511C14.1354 5.96016 14.1735 6.0078 14.2221 6.04299C14.2706 6.07819 14.3277 6.09964 14.3874 6.10509L20.0131 6.75236C20.1983 6.77271 20.3738 6.84609 20.5183 6.9637C20.6629 7.0813 20.7704 7.23813 20.828 7.41536C20.8857 7.59258 20.8909 7.78267 20.8432 7.96281C20.7954 8.14294 20.6967 8.30546 20.5588 8.43086L16.3881 12.2607C16.3428 12.3002 16.309 12.3513 16.2903 12.4085C16.2717 12.4657 16.2688 12.5269 16.2821 12.5856L17.4049 18.1359C17.443 18.3182 17.4275 18.5077 17.3605 18.6814C17.2934 18.8552 17.1775 19.0059 17.0268 19.1153C16.876 19.2248 16.6969 19.2883 16.5109 19.2984C16.3249 19.3084 16.14 19.2644 15.9784 19.1718L11.0467 16.3887C10.9947 16.3586 10.9358 16.3427 10.8758 16.3427C10.8158 16.3427 10.7568 16.3586 10.7049 16.3887L5.77207 19.1718C5.61045 19.2641 5.42561 19.3079 5.23973 19.2977C5.05386 19.2876 4.87487 19.224 4.72425 19.1146C4.57363 19.0052 4.4578 18.8547 4.39066 18.6811C4.32352 18.5075 4.30794 18.3181 4.34577 18.1359L5.46855 12.5856C5.48184 12.5269 5.47901 12.4657 5.46035 12.4085C5.44169 12.3513 5.4079 12.3002 5.36256 12.2607L1.19276 8.43041C1.05471 8.3051 0.955805 8.14258 0.907933 7.96239C0.86006 7.7822 0.86526 7.59202 0.922906 7.41472C0.980552 7.23741 1.08819 7.08054 1.23288 6.96295C1.37756 6.84537 1.55313 6.77209 1.73848 6.75192L7.36502 6.10465C7.42472 6.0992 7.48184 6.07774 7.53037 6.04255C7.5789 6.00735 7.61704 5.95972 7.64077 5.90467L9.99387 0.754744C10.0702 0.584742 10.1941 0.440434 10.3506 0.33919C10.507 0.237946 10.6894 0.184082 10.8758 0.184082C11.0621 0.184082 11.2445 0.237946 11.401 0.33919C11.5575 0.440434 11.6813 0.584742 11.7577 0.754744Z"
+                                    fill="#FFAF14" />
+                            </svg>
+                            3.5
+                        </span>
+                    </div>
+                    <p class="short-description">
+                        From dining reservations to excursion recommendations, our dedicated Club Concierge team elevates your experience, catering to you personally to ensure your stay is exceptional. Along with our personalized Concierge service, there are additional benefits that the Club experience offers including: complimentary pressing of two items per day, business center services, enhanced Wi-Fi, and booking our exclusive Club Car. Please note that Club Car requires a minimum two hours advanced notice when making a reservation
+                    </p>
+                </a>
+                <a href="javascript:viod(0);" class="club-card">
+                    <img src="./image/Club page/Epoch03.jpg" alt="Epoch">
+                    <div class="club-nam">
+                        <p>Dedicated Concierge</p>
+                        <span>
+                            <svg width="15" height="15" viewBox="0 0 21 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M11.7577 0.754744L14.1117 5.90511C14.1354 5.96016 14.1735 6.0078 14.2221 6.04299C14.2706 6.07819 14.3277 6.09964 14.3874 6.10509L20.0131 6.75236C20.1983 6.77271 20.3738 6.84609 20.5183 6.9637C20.6629 7.0813 20.7704 7.23813 20.828 7.41536C20.8857 7.59258 20.8909 7.78267 20.8432 7.96281C20.7954 8.14294 20.6967 8.30546 20.5588 8.43086L16.3881 12.2607C16.3428 12.3002 16.309 12.3513 16.2903 12.4085C16.2717 12.4657 16.2688 12.5269 16.2821 12.5856L17.4049 18.1359C17.443 18.3182 17.4275 18.5077 17.3605 18.6814C17.2934 18.8552 17.1775 19.0059 17.0268 19.1153C16.876 19.2248 16.6969 19.2883 16.5109 19.2984C16.3249 19.3084 16.14 19.2644 15.9784 19.1718L11.0467 16.3887C10.9947 16.3586 10.9358 16.3427 10.8758 16.3427C10.8158 16.3427 10.7568 16.3586 10.7049 16.3887L5.77207 19.1718C5.61045 19.2641 5.42561 19.3079 5.23973 19.2977C5.05386 19.2876 4.87487 19.224 4.72425 19.1146C4.57363 19.0052 4.4578 18.8547 4.39066 18.6811C4.32352 18.5075 4.30794 18.3181 4.34577 18.1359L5.46855 12.5856C5.48184 12.5269 5.47901 12.4657 5.46035 12.4085C5.44169 12.3513 5.4079 12.3002 5.36256 12.2607L1.19276 8.43041C1.05471 8.3051 0.955805 8.14258 0.907933 7.96239C0.86006 7.7822 0.86526 7.59202 0.922906 7.41472C0.980552 7.23741 1.08819 7.08054 1.23288 6.96295C1.37756 6.84537 1.55313 6.77209 1.73848 6.75192L7.36502 6.10465C7.42472 6.0992 7.48184 6.07774 7.53037 6.04255C7.5789 6.00735 7.61704 5.95972 7.64077 5.90467L9.99387 0.754744C10.0702 0.584742 10.1941 0.440434 10.3506 0.33919C10.507 0.237946 10.6894 0.184082 10.8758 0.184082C11.0621 0.184082 11.2445 0.237946 11.401 0.33919C11.5575 0.440434 11.6813 0.584742 11.7577 0.754744Z"
+                                    fill="#FFAF14" />
+                            </svg>
+                            3.5
+                        </span>
+                    </div>
+                    <p class="short-description">
+                        From dining reservations to excursion recommendations, our dedicated Club Concierge team elevates your experience, catering to you personally to ensure your stay is exceptional. Along with our personalized Concierge service, there are additional benefits that the Club experience offers including: complimentary pressing of two items per day, business center services, enhanced Wi-Fi, and booking our exclusive Club Car. Please note that Club Car requires a minimum two hours advanced notice when making a reservation
+                    </p>
+                </a>
+                <a href="javascript:viod(0);" class="club-card">
+                    <img src="./image/Club page/Epoch03.jpg" alt="Epoch">
+                    <div class="club-nam">
+                        <p>Dedicated Concierge</p>
+                        <span>
+                            <svg width="15" height="15" viewBox="0 0 21 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M11.7577 0.754744L14.1117 5.90511C14.1354 5.96016 14.1735 6.0078 14.2221 6.04299C14.2706 6.07819 14.3277 6.09964 14.3874 6.10509L20.0131 6.75236C20.1983 6.77271 20.3738 6.84609 20.5183 6.9637C20.6629 7.0813 20.7704 7.23813 20.828 7.41536C20.8857 7.59258 20.8909 7.78267 20.8432 7.96281C20.7954 8.14294 20.6967 8.30546 20.5588 8.43086L16.3881 12.2607C16.3428 12.3002 16.309 12.3513 16.2903 12.4085C16.2717 12.4657 16.2688 12.5269 16.2821 12.5856L17.4049 18.1359C17.443 18.3182 17.4275 18.5077 17.3605 18.6814C17.2934 18.8552 17.1775 19.0059 17.0268 19.1153C16.876 19.2248 16.6969 19.2883 16.5109 19.2984C16.3249 19.3084 16.14 19.2644 15.9784 19.1718L11.0467 16.3887C10.9947 16.3586 10.9358 16.3427 10.8758 16.3427C10.8158 16.3427 10.7568 16.3586 10.7049 16.3887L5.77207 19.1718C5.61045 19.2641 5.42561 19.3079 5.23973 19.2977C5.05386 19.2876 4.87487 19.224 4.72425 19.1146C4.57363 19.0052 4.4578 18.8547 4.39066 18.6811C4.32352 18.5075 4.30794 18.3181 4.34577 18.1359L5.46855 12.5856C5.48184 12.5269 5.47901 12.4657 5.46035 12.4085C5.44169 12.3513 5.4079 12.3002 5.36256 12.2607L1.19276 8.43041C1.05471 8.3051 0.955805 8.14258 0.907933 7.96239C0.86006 7.7822 0.86526 7.59202 0.922906 7.41472C0.980552 7.23741 1.08819 7.08054 1.23288 6.96295C1.37756 6.84537 1.55313 6.77209 1.73848 6.75192L7.36502 6.10465C7.42472 6.0992 7.48184 6.07774 7.53037 6.04255C7.5789 6.00735 7.61704 5.95972 7.64077 5.90467L9.99387 0.754744C10.0702 0.584742 10.1941 0.440434 10.3506 0.33919C10.507 0.237946 10.6894 0.184082 10.8758 0.184082C11.0621 0.184082 11.2445 0.237946 11.401 0.33919C11.5575 0.440434 11.6813 0.584742 11.7577 0.754744Z"
+                                    fill="#FFAF14" />
+                            </svg>
+                            3.5
+                        </span>
+                    </div>
+                    <p class="short-description">
+                        From dining reservations to excursion recommendations, our dedicated Club Concierge team elevates your experience, catering to you personally to ensure your stay is exceptional. Along with our personalized Concierge service, there are additional benefits that the Club experience offers including: complimentary pressing of two items per day, business center services, enhanced Wi-Fi, and booking our exclusive Club Car. Please note that Club Car requires a minimum two hours advanced notice when making a reservation
+                    </p>
+                </a>
+                <a href="javascript:viod(0);" class="club-card">
+                    <img src="./image/Club page/Epoch03.jpg" alt="Epoch">
+                    <div class="club-nam">
+                        <p>Dedicated Concierge</p>
+                        <span>
+                            <svg width="15" height="15" viewBox="0 0 21 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M11.7577 0.754744L14.1117 5.90511C14.1354 5.96016 14.1735 6.0078 14.2221 6.04299C14.2706 6.07819 14.3277 6.09964 14.3874 6.10509L20.0131 6.75236C20.1983 6.77271 20.3738 6.84609 20.5183 6.9637C20.6629 7.0813 20.7704 7.23813 20.828 7.41536C20.8857 7.59258 20.8909 7.78267 20.8432 7.96281C20.7954 8.14294 20.6967 8.30546 20.5588 8.43086L16.3881 12.2607C16.3428 12.3002 16.309 12.3513 16.2903 12.4085C16.2717 12.4657 16.2688 12.5269 16.2821 12.5856L17.4049 18.1359C17.443 18.3182 17.4275 18.5077 17.3605 18.6814C17.2934 18.8552 17.1775 19.0059 17.0268 19.1153C16.876 19.2248 16.6969 19.2883 16.5109 19.2984C16.3249 19.3084 16.14 19.2644 15.9784 19.1718L11.0467 16.3887C10.9947 16.3586 10.9358 16.3427 10.8758 16.3427C10.8158 16.3427 10.7568 16.3586 10.7049 16.3887L5.77207 19.1718C5.61045 19.2641 5.42561 19.3079 5.23973 19.2977C5.05386 19.2876 4.87487 19.224 4.72425 19.1146C4.57363 19.0052 4.4578 18.8547 4.39066 18.6811C4.32352 18.5075 4.30794 18.3181 4.34577 18.1359L5.46855 12.5856C5.48184 12.5269 5.47901 12.4657 5.46035 12.4085C5.44169 12.3513 5.4079 12.3002 5.36256 12.2607L1.19276 8.43041C1.05471 8.3051 0.955805 8.14258 0.907933 7.96239C0.86006 7.7822 0.86526 7.59202 0.922906 7.41472C0.980552 7.23741 1.08819 7.08054 1.23288 6.96295C1.37756 6.84537 1.55313 6.77209 1.73848 6.75192L7.36502 6.10465C7.42472 6.0992 7.48184 6.07774 7.53037 6.04255C7.5789 6.00735 7.61704 5.95972 7.64077 5.90467L9.99387 0.754744C10.0702 0.584742 10.1941 0.440434 10.3506 0.33919C10.507 0.237946 10.6894 0.184082 10.8758 0.184082C11.0621 0.184082 11.2445 0.237946 11.401 0.33919C11.5575 0.440434 11.6813 0.584742 11.7577 0.754744Z"
+                                    fill="#FFAF14" />
+                            </svg>
+                            3.5
+                        </span>
+                    </div>
+                    <p class="short-description">
+                        From dining reservations to excursion recommendations, our dedicated Club Concierge team elevates your experience, catering to you personally to ensure your stay is exceptional. Along with our personalized Concierge service, there are additional benefits that the Club experience offers including: complimentary pressing of two items per day, business center services, enhanced Wi-Fi, and booking our exclusive Club Car. Please note that Club Car requires a minimum two hours advanced notice when making a reservation
+                    </p>
+                </a>
+                <a href="javascript:viod(0);" class="club-card">
+                    <img src="./image/Club page/Epoch03.jpg" alt="Epoch">
+                    <div class="club-nam">
+                        <p>Dedicated Concierge</p>
+                        <span>
+                            <svg width="15" height="15" viewBox="0 0 21 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M11.7577 0.754744L14.1117 5.90511C14.1354 5.96016 14.1735 6.0078 14.2221 6.04299C14.2706 6.07819 14.3277 6.09964 14.3874 6.10509L20.0131 6.75236C20.1983 6.77271 20.3738 6.84609 20.5183 6.9637C20.6629 7.0813 20.7704 7.23813 20.828 7.41536C20.8857 7.59258 20.8909 7.78267 20.8432 7.96281C20.7954 8.14294 20.6967 8.30546 20.5588 8.43086L16.3881 12.2607C16.3428 12.3002 16.309 12.3513 16.2903 12.4085C16.2717 12.4657 16.2688 12.5269 16.2821 12.5856L17.4049 18.1359C17.443 18.3182 17.4275 18.5077 17.3605 18.6814C17.2934 18.8552 17.1775 19.0059 17.0268 19.1153C16.876 19.2248 16.6969 19.2883 16.5109 19.2984C16.3249 19.3084 16.14 19.2644 15.9784 19.1718L11.0467 16.3887C10.9947 16.3586 10.9358 16.3427 10.8758 16.3427C10.8158 16.3427 10.7568 16.3586 10.7049 16.3887L5.77207 19.1718C5.61045 19.2641 5.42561 19.3079 5.23973 19.2977C5.05386 19.2876 4.87487 19.224 4.72425 19.1146C4.57363 19.0052 4.4578 18.8547 4.39066 18.6811C4.32352 18.5075 4.30794 18.3181 4.34577 18.1359L5.46855 12.5856C5.48184 12.5269 5.47901 12.4657 5.46035 12.4085C5.44169 12.3513 5.4079 12.3002 5.36256 12.2607L1.19276 8.43041C1.05471 8.3051 0.955805 8.14258 0.907933 7.96239C0.86006 7.7822 0.86526 7.59202 0.922906 7.41472C0.980552 7.23741 1.08819 7.08054 1.23288 6.96295C1.37756 6.84537 1.55313 6.77209 1.73848 6.75192L7.36502 6.10465C7.42472 6.0992 7.48184 6.07774 7.53037 6.04255C7.5789 6.00735 7.61704 5.95972 7.64077 5.90467L9.99387 0.754744C10.0702 0.584742 10.1941 0.440434 10.3506 0.33919C10.507 0.237946 10.6894 0.184082 10.8758 0.184082C11.0621 0.184082 11.2445 0.237946 11.401 0.33919C11.5575 0.440434 11.6813 0.584742 11.7577 0.754744Z"
+                                    fill="#FFAF14" />
+                            </svg>
+                            3.5
+                        </span>
+                    </div>
+                    <p class="short-description">
+                        From dining reservations to excursion recommendations, our dedicated Club Concierge team elevates your experience, catering to you personally to ensure your stay is exceptional. Along with our personalized Concierge service, there are additional benefits that the Club experience offers including: complimentary pressing of two items per day, business center services, enhanced Wi-Fi, and booking our exclusive Club Car. Please note that Club Car requires a minimum two hours advanced notice when making a reservation
+                    </p>
+                </a>
+                <a href="javascript:viod(0);" class="club-card">
+                    <img src="./image/Club page/Epoch03.jpg" alt="Epoch">
+                    <div class="club-nam">
+                        <p>Dedicated Concierge</p>
+                        <span>
+                            <svg width="15" height="15" viewBox="0 0 21 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M11.7577 0.754744L14.1117 5.90511C14.1354 5.96016 14.1735 6.0078 14.2221 6.04299C14.2706 6.07819 14.3277 6.09964 14.3874 6.10509L20.0131 6.75236C20.1983 6.77271 20.3738 6.84609 20.5183 6.9637C20.6629 7.0813 20.7704 7.23813 20.828 7.41536C20.8857 7.59258 20.8909 7.78267 20.8432 7.96281C20.7954 8.14294 20.6967 8.30546 20.5588 8.43086L16.3881 12.2607C16.3428 12.3002 16.309 12.3513 16.2903 12.4085C16.2717 12.4657 16.2688 12.5269 16.2821 12.5856L17.4049 18.1359C17.443 18.3182 17.4275 18.5077 17.3605 18.6814C17.2934 18.8552 17.1775 19.0059 17.0268 19.1153C16.876 19.2248 16.6969 19.2883 16.5109 19.2984C16.3249 19.3084 16.14 19.2644 15.9784 19.1718L11.0467 16.3887C10.9947 16.3586 10.9358 16.3427 10.8758 16.3427C10.8158 16.3427 10.7568 16.3586 10.7049 16.3887L5.77207 19.1718C5.61045 19.2641 5.42561 19.3079 5.23973 19.2977C5.05386 19.2876 4.87487 19.224 4.72425 19.1146C4.57363 19.0052 4.4578 18.8547 4.39066 18.6811C4.32352 18.5075 4.30794 18.3181 4.34577 18.1359L5.46855 12.5856C5.48184 12.5269 5.47901 12.4657 5.46035 12.4085C5.44169 12.3513 5.4079 12.3002 5.36256 12.2607L1.19276 8.43041C1.05471 8.3051 0.955805 8.14258 0.907933 7.96239C0.86006 7.7822 0.86526 7.59202 0.922906 7.41472C0.980552 7.23741 1.08819 7.08054 1.23288 6.96295C1.37756 6.84537 1.55313 6.77209 1.73848 6.75192L7.36502 6.10465C7.42472 6.0992 7.48184 6.07774 7.53037 6.04255C7.5789 6.00735 7.61704 5.95972 7.64077 5.90467L9.99387 0.754744C10.0702 0.584742 10.1941 0.440434 10.3506 0.33919C10.507 0.237946 10.6894 0.184082 10.8758 0.184082C11.0621 0.184082 11.2445 0.237946 11.401 0.33919C11.5575 0.440434 11.6813 0.584742 11.7577 0.754744Z"
+                                    fill="#FFAF14" />
+                            </svg>
+                            3.5
+                        </span>
+                    </div>
+                    <p class="short-description">
+                        From dining reservations to excursion recommendations, our dedicated Club Concierge team elevates your experience, catering to you personally to ensure your stay is exceptional. Along with our personalized Concierge service, there are additional benefits that the Club experience offers including: complimentary pressing of two items per day, business center services, enhanced Wi-Fi, and booking our exclusive Club Car. Please note that Club Car requires a minimum two hours advanced notice when making a reservation
+                    </p>
+                </a>
+                <a href="javascript:viod(0);" class="club-card">
+                    <img src="./image/Club page/Epoch03.jpg" alt="Epoch">
+                    <div class="club-nam">
+                        <p>Dedicated Concierge</p>
+                        <span>
+                            <svg width="15" height="15" viewBox="0 0 21 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M11.7577 0.754744L14.1117 5.90511C14.1354 5.96016 14.1735 6.0078 14.2221 6.04299C14.2706 6.07819 14.3277 6.09964 14.3874 6.10509L20.0131 6.75236C20.1983 6.77271 20.3738 6.84609 20.5183 6.9637C20.6629 7.0813 20.7704 7.23813 20.828 7.41536C20.8857 7.59258 20.8909 7.78267 20.8432 7.96281C20.7954 8.14294 20.6967 8.30546 20.5588 8.43086L16.3881 12.2607C16.3428 12.3002 16.309 12.3513 16.2903 12.4085C16.2717 12.4657 16.2688 12.5269 16.2821 12.5856L17.4049 18.1359C17.443 18.3182 17.4275 18.5077 17.3605 18.6814C17.2934 18.8552 17.1775 19.0059 17.0268 19.1153C16.876 19.2248 16.6969 19.2883 16.5109 19.2984C16.3249 19.3084 16.14 19.2644 15.9784 19.1718L11.0467 16.3887C10.9947 16.3586 10.9358 16.3427 10.8758 16.3427C10.8158 16.3427 10.7568 16.3586 10.7049 16.3887L5.77207 19.1718C5.61045 19.2641 5.42561 19.3079 5.23973 19.2977C5.05386 19.2876 4.87487 19.224 4.72425 19.1146C4.57363 19.0052 4.4578 18.8547 4.39066 18.6811C4.32352 18.5075 4.30794 18.3181 4.34577 18.1359L5.46855 12.5856C5.48184 12.5269 5.47901 12.4657 5.46035 12.4085C5.44169 12.3513 5.4079 12.3002 5.36256 12.2607L1.19276 8.43041C1.05471 8.3051 0.955805 8.14258 0.907933 7.96239C0.86006 7.7822 0.86526 7.59202 0.922906 7.41472C0.980552 7.23741 1.08819 7.08054 1.23288 6.96295C1.37756 6.84537 1.55313 6.77209 1.73848 6.75192L7.36502 6.10465C7.42472 6.0992 7.48184 6.07774 7.53037 6.04255C7.5789 6.00735 7.61704 5.95972 7.64077 5.90467L9.99387 0.754744C10.0702 0.584742 10.1941 0.440434 10.3506 0.33919C10.507 0.237946 10.6894 0.184082 10.8758 0.184082C11.0621 0.184082 11.2445 0.237946 11.401 0.33919C11.5575 0.440434 11.6813 0.584742 11.7577 0.754744Z"
+                                    fill="#FFAF14" />
+                            </svg>
+                            3.5
+                        </span>
+                    </div>
+                    <p class="short-description">
+                        From dining reservations to excursion recommendations, our dedicated Club Concierge team elevates your experience, catering to you personally to ensure your stay is exceptional. Along with our personalized Concierge service, there are additional benefits that the Club experience offers including: complimentary pressing of two items per day, business center services, enhanced Wi-Fi, and booking our exclusive Club Car. Please note that Club Car requires a minimum two hours advanced notice when making a reservation
+                    </p>
+                </a>
+                <a href="javascript:viod(0);" class="club-card">
+                    <img src="./image/Club page/Epoch03.jpg" alt="Epoch">
+                    <div class="club-nam">
+                        <p>Dedicated Concierge</p>
+                        <span>
+                            <svg width="15" height="15" viewBox="0 0 21 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M11.7577 0.754744L14.1117 5.90511C14.1354 5.96016 14.1735 6.0078 14.2221 6.04299C14.2706 6.07819 14.3277 6.09964 14.3874 6.10509L20.0131 6.75236C20.1983 6.77271 20.3738 6.84609 20.5183 6.9637C20.6629 7.0813 20.7704 7.23813 20.828 7.41536C20.8857 7.59258 20.8909 7.78267 20.8432 7.96281C20.7954 8.14294 20.6967 8.30546 20.5588 8.43086L16.3881 12.2607C16.3428 12.3002 16.309 12.3513 16.2903 12.4085C16.2717 12.4657 16.2688 12.5269 16.2821 12.5856L17.4049 18.1359C17.443 18.3182 17.4275 18.5077 17.3605 18.6814C17.2934 18.8552 17.1775 19.0059 17.0268 19.1153C16.876 19.2248 16.6969 19.2883 16.5109 19.2984C16.3249 19.3084 16.14 19.2644 15.9784 19.1718L11.0467 16.3887C10.9947 16.3586 10.9358 16.3427 10.8758 16.3427C10.8158 16.3427 10.7568 16.3586 10.7049 16.3887L5.77207 19.1718C5.61045 19.2641 5.42561 19.3079 5.23973 19.2977C5.05386 19.2876 4.87487 19.224 4.72425 19.1146C4.57363 19.0052 4.4578 18.8547 4.39066 18.6811C4.32352 18.5075 4.30794 18.3181 4.34577 18.1359L5.46855 12.5856C5.48184 12.5269 5.47901 12.4657 5.46035 12.4085C5.44169 12.3513 5.4079 12.3002 5.36256 12.2607L1.19276 8.43041C1.05471 8.3051 0.955805 8.14258 0.907933 7.96239C0.86006 7.7822 0.86526 7.59202 0.922906 7.41472C0.980552 7.23741 1.08819 7.08054 1.23288 6.96295C1.37756 6.84537 1.55313 6.77209 1.73848 6.75192L7.36502 6.10465C7.42472 6.0992 7.48184 6.07774 7.53037 6.04255C7.5789 6.00735 7.61704 5.95972 7.64077 5.90467L9.99387 0.754744C10.0702 0.584742 10.1941 0.440434 10.3506 0.33919C10.507 0.237946 10.6894 0.184082 10.8758 0.184082C11.0621 0.184082 11.2445 0.237946 11.401 0.33919C11.5575 0.440434 11.6813 0.584742 11.7577 0.754744Z"
+                                    fill="#FFAF14" />
+                            </svg>
+                            3.5
+                        </span>
+                    </div>
+                    <p class="short-description">
+                        From dining reservations to excursion recommendations, our dedicated Club Concierge team elevates your experience, catering to you personally to ensure your stay is exceptional. Along with our personalized Concierge service, there are additional benefits that the Club experience offers including: complimentary pressing of two items per day, business center services, enhanced Wi-Fi, and booking our exclusive Club Car. Please note that Club Car requires a minimum two hours advanced notice when making a reservation
+                    </p>
+                </a>
+                <a href="javascript:viod(0);" class="club-card">
+                    <img src="./image/Club page/Epoch03.jpg" alt="Epoch">
+                    <div class="club-nam">
+                        <p>Dedicated Concierge</p>
+                        <span>
+                            <svg width="15" height="15" viewBox="0 0 21 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M11.7577 0.754744L14.1117 5.90511C14.1354 5.96016 14.1735 6.0078 14.2221 6.04299C14.2706 6.07819 14.3277 6.09964 14.3874 6.10509L20.0131 6.75236C20.1983 6.77271 20.3738 6.84609 20.5183 6.9637C20.6629 7.0813 20.7704 7.23813 20.828 7.41536C20.8857 7.59258 20.8909 7.78267 20.8432 7.96281C20.7954 8.14294 20.6967 8.30546 20.5588 8.43086L16.3881 12.2607C16.3428 12.3002 16.309 12.3513 16.2903 12.4085C16.2717 12.4657 16.2688 12.5269 16.2821 12.5856L17.4049 18.1359C17.443 18.3182 17.4275 18.5077 17.3605 18.6814C17.2934 18.8552 17.1775 19.0059 17.0268 19.1153C16.876 19.2248 16.6969 19.2883 16.5109 19.2984C16.3249 19.3084 16.14 19.2644 15.9784 19.1718L11.0467 16.3887C10.9947 16.3586 10.9358 16.3427 10.8758 16.3427C10.8158 16.3427 10.7568 16.3586 10.7049 16.3887L5.77207 19.1718C5.61045 19.2641 5.42561 19.3079 5.23973 19.2977C5.05386 19.2876 4.87487 19.224 4.72425 19.1146C4.57363 19.0052 4.4578 18.8547 4.39066 18.6811C4.32352 18.5075 4.30794 18.3181 4.34577 18.1359L5.46855 12.5856C5.48184 12.5269 5.47901 12.4657 5.46035 12.4085C5.44169 12.3513 5.4079 12.3002 5.36256 12.2607L1.19276 8.43041C1.05471 8.3051 0.955805 8.14258 0.907933 7.96239C0.86006 7.7822 0.86526 7.59202 0.922906 7.41472C0.980552 7.23741 1.08819 7.08054 1.23288 6.96295C1.37756 6.84537 1.55313 6.77209 1.73848 6.75192L7.36502 6.10465C7.42472 6.0992 7.48184 6.07774 7.53037 6.04255C7.5789 6.00735 7.61704 5.95972 7.64077 5.90467L9.99387 0.754744C10.0702 0.584742 10.1941 0.440434 10.3506 0.33919C10.507 0.237946 10.6894 0.184082 10.8758 0.184082C11.0621 0.184082 11.2445 0.237946 11.401 0.33919C11.5575 0.440434 11.6813 0.584742 11.7577 0.754744Z"
+                                    fill="#FFAF14" />
+                            </svg>
+                            3.5
+                        </span>
+                    </div>
+                    <p class="short-description">
+                        From dining reservations to excursion recommendations, our dedicated Club Concierge team elevates your experience, catering to you personally to ensure your stay is exceptional. Along with our personalized Concierge service, there are additional benefits that the Club experience offers including: complimentary pressing of two items per day, business center services, enhanced Wi-Fi, and booking our exclusive Club Car. Please note that Club Car requires a minimum two hours advanced notice when making a reservation
+                    </p>
+                </a>
+                <a href="javascript:viod(0);" class="club-card">
+                    <img src="./image/Club page/Epoch03.jpg" alt="Epoch">
+                    <div class="club-nam">
+                        <p>Dedicated Concierge</p>
+                        <span>
+                            <svg width="15" height="15" viewBox="0 0 21 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M11.7577 0.754744L14.1117 5.90511C14.1354 5.96016 14.1735 6.0078 14.2221 6.04299C14.2706 6.07819 14.3277 6.09964 14.3874 6.10509L20.0131 6.75236C20.1983 6.77271 20.3738 6.84609 20.5183 6.9637C20.6629 7.0813 20.7704 7.23813 20.828 7.41536C20.8857 7.59258 20.8909 7.78267 20.8432 7.96281C20.7954 8.14294 20.6967 8.30546 20.5588 8.43086L16.3881 12.2607C16.3428 12.3002 16.309 12.3513 16.2903 12.4085C16.2717 12.4657 16.2688 12.5269 16.2821 12.5856L17.4049 18.1359C17.443 18.3182 17.4275 18.5077 17.3605 18.6814C17.2934 18.8552 17.1775 19.0059 17.0268 19.1153C16.876 19.2248 16.6969 19.2883 16.5109 19.2984C16.3249 19.3084 16.14 19.2644 15.9784 19.1718L11.0467 16.3887C10.9947 16.3586 10.9358 16.3427 10.8758 16.3427C10.8158 16.3427 10.7568 16.3586 10.7049 16.3887L5.77207 19.1718C5.61045 19.2641 5.42561 19.3079 5.23973 19.2977C5.05386 19.2876 4.87487 19.224 4.72425 19.1146C4.57363 19.0052 4.4578 18.8547 4.39066 18.6811C4.32352 18.5075 4.30794 18.3181 4.34577 18.1359L5.46855 12.5856C5.48184 12.5269 5.47901 12.4657 5.46035 12.4085C5.44169 12.3513 5.4079 12.3002 5.36256 12.2607L1.19276 8.43041C1.05471 8.3051 0.955805 8.14258 0.907933 7.96239C0.86006 7.7822 0.86526 7.59202 0.922906 7.41472C0.980552 7.23741 1.08819 7.08054 1.23288 6.96295C1.37756 6.84537 1.55313 6.77209 1.73848 6.75192L7.36502 6.10465C7.42472 6.0992 7.48184 6.07774 7.53037 6.04255C7.5789 6.00735 7.61704 5.95972 7.64077 5.90467L9.99387 0.754744C10.0702 0.584742 10.1941 0.440434 10.3506 0.33919C10.507 0.237946 10.6894 0.184082 10.8758 0.184082C11.0621 0.184082 11.2445 0.237946 11.401 0.33919C11.5575 0.440434 11.6813 0.584742 11.7577 0.754744Z"
+                                    fill="#FFAF14" />
+                            </svg>
+                            3.5
+                        </span>
+                    </div>
+                    <p class="short-description">
+                        From dining reservations to excursion recommendations, our dedicated Club Concierge team elevates your experience, catering to you personally to ensure your stay is exceptional. Along with our personalized Concierge service, there are additional benefits that the Club experience offers including: complimentary pressing of two items per day, business center services, enhanced Wi-Fi, and booking our exclusive Club Car. Please note that Club Car requires a minimum two hours advanced notice when making a reservation
+                    </p>
+                </a>
+                <a href="javascript:viod(0);" class="club-card">
+                    <img src="./image/Club page/Epoch03.jpg" alt="Epoch">
+                    <div class="club-nam">
+                        <p>Dedicated Concierge</p>
+                        <span>
+                            <svg width="15" height="15" viewBox="0 0 21 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M11.7577 0.754744L14.1117 5.90511C14.1354 5.96016 14.1735 6.0078 14.2221 6.04299C14.2706 6.07819 14.3277 6.09964 14.3874 6.10509L20.0131 6.75236C20.1983 6.77271 20.3738 6.84609 20.5183 6.9637C20.6629 7.0813 20.7704 7.23813 20.828 7.41536C20.8857 7.59258 20.8909 7.78267 20.8432 7.96281C20.7954 8.14294 20.6967 8.30546 20.5588 8.43086L16.3881 12.2607C16.3428 12.3002 16.309 12.3513 16.2903 12.4085C16.2717 12.4657 16.2688 12.5269 16.2821 12.5856L17.4049 18.1359C17.443 18.3182 17.4275 18.5077 17.3605 18.6814C17.2934 18.8552 17.1775 19.0059 17.0268 19.1153C16.876 19.2248 16.6969 19.2883 16.5109 19.2984C16.3249 19.3084 16.14 19.2644 15.9784 19.1718L11.0467 16.3887C10.9947 16.3586 10.9358 16.3427 10.8758 16.3427C10.8158 16.3427 10.7568 16.3586 10.7049 16.3887L5.77207 19.1718C5.61045 19.2641 5.42561 19.3079 5.23973 19.2977C5.05386 19.2876 4.87487 19.224 4.72425 19.1146C4.57363 19.0052 4.4578 18.8547 4.39066 18.6811C4.32352 18.5075 4.30794 18.3181 4.34577 18.1359L5.46855 12.5856C5.48184 12.5269 5.47901 12.4657 5.46035 12.4085C5.44169 12.3513 5.4079 12.3002 5.36256 12.2607L1.19276 8.43041C1.05471 8.3051 0.955805 8.14258 0.907933 7.96239C0.86006 7.7822 0.86526 7.59202 0.922906 7.41472C0.980552 7.23741 1.08819 7.08054 1.23288 6.96295C1.37756 6.84537 1.55313 6.77209 1.73848 6.75192L7.36502 6.10465C7.42472 6.0992 7.48184 6.07774 7.53037 6.04255C7.5789 6.00735 7.61704 5.95972 7.64077 5.90467L9.99387 0.754744C10.0702 0.584742 10.1941 0.440434 10.3506 0.33919C10.507 0.237946 10.6894 0.184082 10.8758 0.184082C11.0621 0.184082 11.2445 0.237946 11.401 0.33919C11.5575 0.440434 11.6813 0.584742 11.7577 0.754744Z"
+                                    fill="#FFAF14" />
+                            </svg>
+                            3.5
+                        </span>
+                    </div>
+                    <p class="short-description">
+                        From dining reservations to excursion recommendations, our dedicated Club Concierge team elevates your experience, catering to you personally to ensure your stay is exceptional. Along with our personalized Concierge service, there are additional benefits that the Club experience offers including: complimentary pressing of two items per day, business center services, enhanced Wi-Fi, and booking our exclusive Club Car. Please note that Club Car requires a minimum two hours advanced notice when making a reservation
+                    </p>
+                </a>
+                <div class="line-contianer">
+                    <span class="dot"></span>
+                    <span class="line"></span>
+                    <span class="dot"></span>
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </div>
+    <!-- End main section -->
+    <!-- Start login modal -->
+    <div class="login-modal-container">
+        <div class="login-modal">
+            <div class="close-login-modal">
+                <button class="close-login-modal-btn" onclick="closeLoginModal()">
+                    <svg height="41" viewBox="0 0 40 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M20.0258 13.7565L32.4129 1.36935C33.2387 0.543548 34.8903 0.543548 35.7161 1.36935L39.2258 4.87903C40.2581 5.91129 40.2581 7.5629 39.2258 8.38871L27.0452 20.7758L39.2258 33.1629C40.2581 33.9887 40.2581 35.6403 39.2258 36.4661L35.7161 39.9758C34.8903 41.0081 33.2387 41.0081 32.4129 39.9758L20.0258 27.7952L7.63871 39.9758C6.8129 41.0081 5.16129 41.0081 4.12903 39.9758L0.619355 36.4661C-0.206452 35.6403 -0.206452 33.9887 0.619355 33.1629L13.0065 20.7758L0.619355 8.38871C-0.206452 7.5629 -0.206452 5.91129 0.619355 4.87903L4.12903 1.36935C5.16129 0.543548 6.8129 0.543548 7.63871 1.36935L20.0258 13.7565Z"
+                            fill="#E0000D" />
+                    </svg>
+                </button>
+            </div>
+            <div class="tab-buttons">
+                <button class="tab-btn active" content-id="login">
+                    login
+                </button>
+                <button class="tab-btn" content-id="register">
+                    Register
+                </button>
+
+            </div>
+            <div class="tab-contents">
+                <div class="tab-content show" id="login">
+                    <div class="content-info">
+                        <div class="login-form-content">
+                            <div class="form-row-modal">
+                                <label>Phone number</label>
+                                <input type="text" required placeholder="Enter your mobile phone number" />
+                            </div>
+                            <div class="form-row-modal">
+                                <label>password</label>
+                                <input type="password" required placeholder="password" />
+                            </div>
+                            <button class="priymery-btn login-form-btn">
+                                login
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-content" id="register">
+
+                    <div class="content-info">
+                        <div class="login-form-content">
+                            <div class="form-row-modal">
+                                <label>Full name </label>
+                                <input type="text" required placeholder="Enter your full name" />
+                            </div>
+                            <div class="form-row-modal">
+                                <label>Phone number</label>
+                                <input type="text" required placeholder="Enter your Phone number" />
+                            </div>
+                            <div class="form-row-modal">
+                                <label>password</label>
+                                <input type="password" required placeholder="Enter your password" />
+                            </div>
+                            <div class="form-row-modal">
+                                <label>repeat the password</label>
+                                <input type="password" required placeholder="Enter your password again" />
+                            </div>
+                            <button class="priymery-btn login-form-btn">
+                                Register
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End login modal -->
+    <!-- Start footer -->
+    <footer>
+        <div class="footer-contianer">
+            <div class="about-us-clm">
+                <img src="image/Home page/Logo.png" alt="Hotel">
+                <p>
+                    Itawa is a responsive real estate landing page template.Itawa is a landing page template.Itawa
+                    template.
+                </p>
+            </div>
+            <div class="contact-us-clm">
+                <h4>Contact Us</h4>
+                <span>
+                    <img src="image/svg/location.svg" alt="location">
+                    123 Business Centre London SW1A 1AA
+                </span>
+                <span>
+                    <img src="image/svg/tell.svg" alt="tell">
+                    <a href="tell:+1 0000 000 00">+1 0000 000 00</a>
+                </span>
+                <span>
+                    <img src="./image/svg/email.svg" alt="email">
+                    info@businessname.com
+                </span>
+            </div>
+            <div class="social-media-clm">
+                <h4>Follow Us</h4>
+                <div class="social-media">
+                    <a href="#" title="facebook" style="margin-left: 0;">
+                        <img src="image/svg/facebook.svg" alt="facebook">
+                    </a>
+                    <a href="#" title="instagram">
+                        <img src="image/svg/instagram.svg" alt="instagram">
+                    </a>
+                    <a href="#" title="twitter">
+                        <img src="image/svg/twitter.svg" alt="twitter">
+                    </a>
+                </div>
+                <p>
+                    Itawa is a responsive real estate landing page <br> template.Itawa is a landing page template.Itawa
+                    <br>
+                    template.
+                </p>
+            </div>
+        </div>
+        <div class="footer-copy-right">
+            <p>©HOTEL Official 2022</p>
+            <pre>Privacy policy   Cookies   Terms of service</pre>
+        </div>
+    </footer>
+    <!-- End footer -->
+    <script src="./js/login.js"></script>
+    <script src="./js/club.js"></script>
+</body>
+
+</html>

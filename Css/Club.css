@@ -1,0 +1,223 @@
+/* start top-Club-content */
+.top-Club-warpper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 50px 0px;
+}
+
+.top-Club-contianer {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    padding: 20px;
+    border-radius: 35px;
+    background: var(--nav-back-color);
+}
+
+.top-Club-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100vw;
+    margin: 50px;
+}
+
+.top-Club-content p {
+    font-size: 18px;
+    color: var(--text-color);
+}
+
+.top-Club-pic {
+    width: 90vw;
+}
+
+.top-Club-pic img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 25px;
+}
+
+.special-lable {
+    position: absolute;
+    top: 0;
+    left: 45px;
+    background: var(--solid-color);
+    padding: 10px;
+    border-radius: 0px 0px 50px 50px;
+}
+
+/* end top-Club-content */
+/* Start Club list */
+.club-list-warpper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    margin: 50px 0px;
+}
+
+.club-list-contianer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 90%;
+}
+
+.club-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 20px;
+    width: 300px;
+    padding: 10px;
+    margin: 0px 10px;
+    margin-bottom: 15px;
+    transition: all 0.5s;
+}
+
+.club-card:hover {
+    background: var(--nav-back-color);
+}
+
+.club-card img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.club-nam {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.club-nam p {
+    color: var(--h1-color);
+    font-weight: bold;
+}
+
+.club-nam span {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+
+.club-nam span svg {
+    margin-right: 4px;
+    margin-bottom: 5px;
+}
+
+.short-description {
+    margin: 0;
+    color: var(--text-color);
+    text-align: justify;
+    font-size: 14px;
+}
+
+.line-contianer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 80px;
+}
+
+.dot {
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 100px;
+    background: var(--priymery-btn);
+}
+
+.line {
+    display: block;
+    height: 130vh;
+    width: 4px;
+    background: var(--priymery-btn);
+}
+
+.club-list-header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-bottom: 20px;
+    width: 87%;
+}
+
+.club-list-header h2 {
+    font-size: 32px;
+    color: var(--h1-color);
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.club-list-header span {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.filter-col {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Search-col {
+    display: flex;
+    align-items: center;
+}
+
+.Search-col input {
+    width: 400px;
+    height: 40px;
+    padding: 10px;
+    font-size: 14px;
+    color: var(--text-color);
+    border: none;
+    background: var(--nav-back-color);
+    border-radius: 5px 0px 0px 5px;
+}
+
+.Search-col input:focus {
+    background: var(--light-main-color);
+    outline: none;
+}
+
+.Search-col button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    padding: 10px;
+    background: var(--footer-back-color);
+    border: none;
+    border-radius: 0px 5px 5px 0px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.Search-col button:hover {
+    background: var(--btn-hover);
+}
+
+.Search-col button:focus {
+    background: var(--btn-hover);
+}
+
+.Search-col button img {
+    width: 20px;
+}

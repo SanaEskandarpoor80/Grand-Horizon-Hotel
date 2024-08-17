@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Club</title>
+    <link rel="stylesheet" href="./Css/style.css">
+    <link rel="stylesheet" href="./Css/responsive.css">
+    <link rel="stylesheet" href="./Css/Club.css">
+</head>
+
+<body>
+    <!-- start navbar -->
+    <nav>
+        <div class="navbar-contianer">
+            <a href="./index.html">
+                <img src="./image/Home page/Logo.png" alt="HOTEL LOGO">
+            </a>
+            <div class="navbar-link-contianer">
+                <a href="index.html">Home</a>
+                <a href="Club.html">Club</a>
+                <a href="Contact-Us.html">Contact Us</a>
+                <a href="About-Us.html" class="active-link">About Us</a>
+                <a href="#">Pages </a>
+                <a href="blog.html">Blog</a>
+            </div>
+            <button class="priymery-btn" onclick="openLoginModal()">Reservation</button>
+        </div>
+    </nav>
+    <!-- End navbar -->
+    <!-- Start main section -->
+    <div class="warpper">
+        <div class="Paragraph-section" style="margin-top: 60px;">
+            <img class="Paragraph-pic" src="./image/svg/History.svg" alt="History">
+            <h2>History of the Grand Horizon Hotel</h2>
+            <p>The Grand Horizon Hotel proudly stands as one of the oldest and most prestigious lodging establishments
+                in the region. Founded in 2016, this hotel has since served as a symbol of hospitality and comfort for
+                its esteemed guests.
+                <br>
+                The hotel's beginnings trace back to a small local house, which over time, due to its popularity and
+                high demand, transformed into one of the top hotels in the area. Grand Horizon Hotel has consistently
+                endeavored to provide a unique and memorable experience for its guests by blending cultural heritage
+                with modern amenities.
+                <br>
+                With over 8 years since its establishment, Grand Horizon Hotel continues to be a favored destination for
+                both
+                domestic and international travelers. Its stunning architecture, tranquil environment, and exceptional
+                services have earned it an international reputation.
+            </p>
+        </div>
+        <div class="pic-text-section">
+            <span class="pic-holder">
+                <img src="./image/About us/Daniel Roberts.png" alt="Daniel Roberts">
+            </span>
+            <div class="text-col">
+                <h3>About Daniel Roberts</h3>
+                <p>
+                    Daniel Roberts, a successful hotel manager and the founder of Grand Horizon Hotel, was born in 1999.
+                    From an early age, Daniel had a deep interest in hospitality and management. He grew up in a family
+                    where the hotel and service industry were integral parts of their daily life. This environment
+                    instilled
+                    in him a strong understanding of the importance of providing excellent service and creating
+                    memorable
+                    experiences for guests.
+                    <br>
+                    During his academic years, Daniel pursued a degree in Hospitality Management and Tourism, graduating
+                    with top honors. He also participated in various management courses and internships at some of the
+                    world's leading hotels, gaining both practical and theoretical knowledge. These experiences allowed
+                    him
+                    to become familiar with all aspects of the hotel industry and to cultivate innovative ideas for
+                    improving hospitality services.
+                </p>
+            </div>
+        </div>
+
+        <div class="Paragraph-section">
+            <p>In 2020, Daniel decided to turn his dream into reality by establishing the Grand Horizon Hotel. With its
+                modern architecture and exceptional service, the hotel quickly became one of the top tourist
+                destinations in the region. By combining the art of hospitality with advanced technology, Daniel created
+                a unique and luxurious experience for his guests. The Grand Horizon Hotel rapidly gained popularity
+                among both domestic and international travelers, not only for its beauty and distinctive design but also
+                for its commitment to quality and service.
+                <br>
+                Daniel Roberts continuously seeks to elevate hospitality standards through his innovative vision and
+                customer-centric approach. He understands the importance of attention to detail in delivering services
+                and strives to turn every aspect of his guests' stay into a special and memorable experience. Daniel
+                believes that a successful hotel should not only meet the basic needs of its guests but also exceed
+                their expectations by creating extraordinary moments.
+                <br>
+                Daniel's relentless efforts, along with his dedicated team, have led the Grand Horizon Hotel to receive
+                numerous international awards in the hospitality industry. He remains committed to finding new ways to
+                improve and expand the hotel's services, with the aspiration of becoming one of the world's leading
+                hoteliers. With the same passion and motivation he had from the start, Daniel continues his journey,
+                aiming to make the Grand Horizon Hotel one of the best and most renowned hotels globally.
+                <br>
+                In addition to his professional achievements, Daniel Roberts is also known for his dedication to social
+                causes. He actively participates in various charitable and community initiatives, always striving to use
+                his success to help others. Daniel believes that true success is achieved when it is shared with others
+                and used to improve the lives of those around him.
+            </p>
+        </div>
+    </div>
+    <!-- End main section -->
+    <!-- Start login modal -->
+    <div class="login-modal-container">
+        <div class="login-modal">
+            <div class="close-login-modal">
+                <button class="close-login-modal-btn" onclick="closeLoginModal()">
+                    <svg height="41" viewBox="0 0 40 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M20.0258 13.7565L32.4129 1.36935C33.2387 0.543548 34.8903 0.543548 35.7161 1.36935L39.2258 4.87903C40.2581 5.91129 40.2581 7.5629 39.2258 8.38871L27.0452 20.7758L39.2258 33.1629C40.2581 33.9887 40.2581 35.6403 39.2258 36.4661L35.7161 39.9758C34.8903 41.0081 33.2387 41.0081 32.4129 39.9758L20.0258 27.7952L7.63871 39.9758C6.8129 41.0081 5.16129 41.0081 4.12903 39.9758L0.619355 36.4661C-0.206452 35.6403 -0.206452 33.9887 0.619355 33.1629L13.0065 20.7758L0.619355 8.38871C-0.206452 7.5629 -0.206452 5.91129 0.619355 4.87903L4.12903 1.36935C5.16129 0.543548 6.8129 0.543548 7.63871 1.36935L20.0258 13.7565Z"
+                            fill="#E0000D" />
+                    </svg>
+                </button>
+            </div>
+            <div class="tab-buttons">
+                <button class="tab-btn active" content-id="login">
+                    login
+                </button>
+                <button class="tab-btn" content-id="register">
+                    Register
+                </button>
+
+            </div>
+            <div class="tab-contents">
+                <div class="tab-content show" id="login">
+                    <div class="content-info">
+                        <div class="login-form-content">
+                            <div class="form-row-modal">
+                                <label>Phone number</label>
+                                <input type="text" required placeholder="Enter your mobile phone number" />
+                            </div>
+                            <div class="form-row-modal">
+                                <label>password</label>
+                                <input type="password" required placeholder="password" />
+                            </div>
+                            <button class="priymery-btn login-form-btn">
+                                login
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-content" id="register">
+
+                    <div class="content-info">
+                        <div class="login-form-content">
+                            <div class="form-row-modal">
+                                <label>Full name </label>
+                                <input type="text" required placeholder="Enter your full name" />
+                            </div>
+                            <div class="form-row-modal">
+                                <label>Phone number</label>
+                                <input type="text" required placeholder="Enter your Phone number" />
+                            </div>
+                            <div class="form-row-modal">
+                                <label>password</label>
+                                <input type="password" required placeholder="Enter your password" />
+                            </div>
+                            <div class="form-row-modal">
+                                <label>repeat the password</label>
+                                <input type="password" required placeholder="Enter your password again" />
+                            </div>
+                            <button class="priymery-btn login-form-btn">
+                                Register
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End login modal -->
+    <!-- Start footer -->
+    <footer>
+        <div class="footer-contianer">
+            <div class="about-us-clm">
+                <img src="image/Home page/Logo.png" alt="Hotel">
+                <p>
+                    Itawa is a responsive real estate landing page template.Itawa is a landing page template.Itawa
+                    template.
+                </p>
+            </div>
+            <div class="contact-us-clm">
+                <h4>Contact Us</h4>
+                <span>
+                    <img src="image/svg/location.svg" alt="location">
+                    123 Business Centre London SW1A 1AA
+                </span>
+                <span>
+                    <img src="image/svg/tell.svg" alt="tell">
+                    <a href="tell:+1 0000 000 00">+1 0000 000 00</a>
+                </span>
+                <span>
+                    <img src="./image/svg/email.svg" alt="email">
+                    info@businessname.com
+                </span>
+            </div>
+            <div class="social-media-clm">
+                <h4>Follow Us</h4>
+                <div class="social-media">
+                    <a href="#" title="facebook" style="margin-left: 0;">
+                        <img src="image/svg/facebook.svg" alt="facebook">
+                    </a>
+                    <a href="#" title="instagram">
+                        <img src="image/svg/instagram.svg" alt="instagram">
+                    </a>
+                    <a href="#" title="twitter">
+                        <img src="image/svg/twitter.svg" alt="twitter">
+                    </a>
+                </div>
+                <p>
+                    Itawa is a responsive real estate landing page <br> template.Itawa is a landing page template.Itawa
+                    <br>
+                    template.
+                </p>
+            </div>
+        </div>
+        <div class="footer-copy-right">
+            <p>©HOTEL Official 2022</p>
+            <pre>Privacy policy   Cookies   Terms of service</pre>
+        </div>
+    </footer>
+    <!-- End footer -->
+    <script src="./js/login.js"></script>
+    <script src="./js/club.js"></script>
+</body>
+
+</html>

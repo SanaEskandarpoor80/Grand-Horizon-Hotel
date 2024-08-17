@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Club</title>
+    <link rel="stylesheet" href="./Css/style.css">
+    <link rel="stylesheet" href="./Css/responsive.css">
+    <link rel="stylesheet" href="./Css/Club.css">
+    <link rel="stylesheet" href="./Css/Contact-Us.css">
+</head>
+
+<body>
+    <!-- start navbar -->
+    <nav>
+        <div class="navbar-contianer">
+            <a href="./index.html">
+                <img src="./image/Home page/Logo.png" alt="HOTEL LOGO">
+            </a>
+            <div class="navbar-link-contianer">
+                <a href="index.html">Home</a>
+                <a href="Club.html">Club</a>
+                <a href="Contact-Us.html" class="active-link">Contact Us</a>
+                <a href="About-Us.html">About Us</a>
+                <a href="#">Pages </a>
+                <a href="blog.html">Blog</a>
+            </div>
+            <button class="priymery-btn" onclick="openLoginModal()">Reservation</button>
+        </div>
+    </nav>
+    <!-- End navbar -->
+    <!-- Start main section -->
+    <div class="warpper">
+        <div class="Contact-us-header">
+            <h2>Get in Touch with Us</h2>
+            <p>
+                At Grand Horizon Hotel, we are always ready to address your needs and questions. Whether you're looking
+                to book a room, request more information, or provide feedback and suggestions, our support team is here
+                to assist you with pride. Please feel free to reach out to us through the contact form, email, or the
+                phone numbers provided. Our goal is to ensure you have a unique and memorable experience, and we are
+                committed to addressing any questions or concerns promptly and efficiently.
+            </p>
+        </div>
+        <div class="Contact-us-contianer">
+            <div class="Contact-info">
+                <p>Contact Information</p>
+                <span>
+                    For any inquiries or additional information, feel free to reach out to Grand Horizon Hotel via
+                    phone, email, or by visiting us at our address. Our team is ready to assist you to ensure an
+                    exceptional and comfortable experience. We look forward to hearing from you.
+                </span>
+                <div class="info">
+                    <img src="./image/svg/tell.svg" alt="tell">
+                    <a href="tell:+1 0000 000 00">+1 0000 000 00</a>
+                </div>
+                <div class="info">
+                    <img src="./image/svg/email.svg" alt="email">
+                    <a href= "mailto: info@businessname.com">info@businessname.com</a>
+                </div>
+                <span class="Contact-circle"></span>
+            </div>
+            <form id="contactForm">
+                <div class="Contact-form-row">
+                    <span>
+                        <label for="Fname">First Name</label>
+                        <input type="text" id="Fname" placeholder="Enter your first name">
+                    </span>
+                    <span>
+                        <label for="Lname">Last Name</label>
+                        <input type="text" id="Last" placeholder="Enter your Last name">
+                    </span>
+                </div>
+                <div class="Contact-form-row">
+                    <span>
+                        <label for="Subject">Please select the section you are interested in</label>
+                        <select id="Subject">
+                            <option value="Customer Service" selected>Customer Service</option>
+                            <option value="Reception">Reception</option>
+                            <option value="Room Service">Room Service</option>
+                            <option value="Concierge">Concierge</option>
+                            <option value="Conference and Meeting Rooms">Conference and Meeting Rooms</option>
+                        </select>
+                    </span>
+                    <span>
+                        <label for="Email">Email</label>
+                        <input type="email" id="Email" placeholder="Enter your Email">
+                    </span>
+                </div>
+                <div class="Contact-form-row massage">
+                    <label for="massage">Message</label>
+                    <textarea id="massage" placeholder="Type your message..."></textarea>
+                </div>
+                <button class="priymery-btn" type="button">Send Message</button>
+                <div class="error-message" id="error-message" style="display: none;"></div>
+            </form>
+        </div>
+    </div>
+    <!-- End main section -->
+    <!-- Start login modal -->
+    <div class="login-modal-container">
+        <div class="login-modal">
+            <div class="close-login-modal">
+                <button class="close-login-modal-btn" onclick="closeLoginModal()">
+                    <svg height="41" viewBox="0 0 40 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M20.0258 13.7565L32.4129 1.36935C33.2387 0.543548 34.8903 0.543548 35.7161 1.36935L39.2258 4.87903C40.2581 5.91129 40.2581 7.5629 39.2258 8.38871L27.0452 20.7758L39.2258 33.1629C40.2581 33.9887 40.2581 35.6403 39.2258 36.4661L35.7161 39.9758C34.8903 41.0081 33.2387 41.0081 32.4129 39.9758L20.0258 27.7952L7.63871 39.9758C6.8129 41.0081 5.16129 41.0081 4.12903 39.9758L0.619355 36.4661C-0.206452 35.6403 -0.206452 33.9887 0.619355 33.1629L13.0065 20.7758L0.619355 8.38871C-0.206452 7.5629 -0.206452 5.91129 0.619355 4.87903L4.12903 1.36935C5.16129 0.543548 6.8129 0.543548 7.63871 1.36935L20.0258 13.7565Z"
+                            fill="#E0000D" />
+                    </svg>
+                </button>
+            </div>
+            <div class="tab-buttons">
+                <button class="tab-btn active" content-id="login">
+                    login
+                </button>
+                <button class="tab-btn" content-id="register">
+                    Register
+                </button>
+
+            </div>
+            <div class="tab-contents">
+                <div class="tab-content show" id="login">
+                    <div class="content-info">
+                        <div class="login-form-content">
+                            <div class="form-row-modal">
+                                <label>Phone number</label>
+                                <input type="text" required placeholder="Enter your mobile phone number" />
+                            </div>
+                            <div class="form-row-modal">
+                                <label>password</label>
+                                <input type="password" required placeholder="password" />
+                            </div>
+                            <button class="priymery-btn login-form-btn">
+                                login
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-content" id="register">
+
+                    <div class="content-info">
+                        <div class="login-form-content">
+                            <div class="form-row-modal">
+                                <label>Full name </label>
+                                <input type="text" required placeholder="Enter your full name" />
+                            </div>
+                            <div class="form-row-modal">
+                                <label>Phone number</label>
+                                <input type="text" required placeholder="Enter your Phone number" />
+                            </div>
+                            <div class="form-row-modal">
+                                <label>password</label>
+                                <input type="password" required placeholder="Enter your password" />
+                            </div>
+                            <div class="form-row-modal">
+                                <label>repeat the password</label>
+                                <input type="password" required placeholder="Enter your password again" />
+                            </div>
+                            <button class="priymery-btn login-form-btn">
+                                Register
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End login modal -->
+    <!-- Start footer -->
+    <footer>
+        <div class="footer-contianer">
+            <div class="about-us-clm">
+                <img src="image/Home page/Logo.png" alt="Hotel">
+                <p>
+                    Itawa is a responsive real estate landing page template.Itawa is a landing page template.Itawa
+                    template.
+                </p>
+            </div>
+            <div class="contact-us-clm">
+                <h4>Contact Us</h4>
+                <span>
+                    <img src="image/svg/location.svg" alt="location">
+                    123 Business Centre London SW1A 1AA
+                </span>
+                <span>
+                    <img src="image/svg/tell.svg" alt="tell">
+                    <a href="tell:+1 0000 000 00">+1 0000 000 00</a>
+                </span>
+                <span>
+                    <img src="./image/svg/email.svg" alt="email">
+                    info@businessname.com
+                </span>
+            </div>
+            <div class="social-media-clm">
+                <h4>Follow Us</h4>
+                <div class="social-media">
+                    <a href="#" title="facebook" style="margin-left: 0;">
+                        <img src="image/svg/facebook.svg" alt="facebook">
+                    </a>
+                    <a href="#" title="instagram">
+                        <img src="image/svg/instagram.svg" alt="instagram">
+                    </a>
+                    <a href="#" title="twitter">
+                        <img src="image/svg/twitter.svg" alt="twitter">
+                    </a>
+                </div>
+                <p>
+                    Itawa is a responsive real estate landing page <br> template.Itawa is a landing page template.Itawa
+                    <br>
+                    template.
+                </p>
+            </div>
+        </div>
+        <div class="footer-copy-right">
+            <p>©HOTEL Official 2022</p>
+            <pre>Privacy policy   Cookies   Terms of service</pre>
+        </div>
+    </footer>
+    <!-- End footer -->
+    <script src="./js/login.js"></script>
+    <script src="./js/club.js"></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="./js/send-email.js"></script>
+</body>
+
+</html>
